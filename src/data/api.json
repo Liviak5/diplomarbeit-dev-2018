@@ -1,0 +1,403 @@
+{
+  "discovers": [
+    {
+      "id": 2,
+      "style": "jazz",
+      "track": "sound.mp3"
+    },
+    {
+      "id": 4,
+      "style": "hiphop",
+      "track": "sound.mp3"
+    },
+    {
+      "id": 1,
+      "style": "indie",
+      "track": "sound.mp3"
+    },
+    {
+      "id": 3,
+      "style": "alternative",
+      "track": "sound.mp3"
+    }
+  ],
+  "festivals": [
+    {
+      "id": 1,
+      "title": "Stars of Sounds",
+      "text": "Das eintätige Festival präsentiert Künstler, welche sich im Spannungsfeld zwischen verschiedensten musikalischen Strömungen und Einflüssen bewegen. Wir bieten Musikern, die sich für spannende, innovative und progressive Musik einsetzen eine Plattform. Das Fest findet mit einem atemberaubenden Ausblick über den Bodensee auf der Eggersrieter Höhe statt.",
+      "style": "hiphop",
+      "icon": "music_hiphop.svg",
+      "img": "surLeLac/surLeLac_kachel.jpg",
+      "location": "Aarberg BE",
+      "date": "08. Jul – 09. Jul 2016",
+      "selected": true,
+      "tickets": [
+        {"category": "Allg", "name": "Total", "image": "tickets_standard.svg", "price": "", "totalNumber": 1400, "available": 700, "boxesColored": 5, "boxesGrey": 5, "style": "hiphop"},
+        {"category": "entrance", "name": "1 Tag Pass", "image": "tickets_standard.svg", "price": "CHF 75.–", "totalNumber": 600, "available": 480, "boxesColored": 8, "boxesGrey": 2, "style": "hiphop"},
+        {"category": "entrance", "name": "3 Tage Pass", "image": "tickets_standard.svg", "price": "CHF 375.–", "totalNumber": 600, "available": 0, "boxesColored": 0, "boxesGrey": 10, "style": "hiphop"},
+        {"category": "entrance", "name": "VIP 1 Tag", "image": "tickets_vip.svg", "price": "CHF 225.–", "totalNumber": 75, "available": 45, "boxesColored": 6, "boxesGrey": 4, "style": "hiphop"},
+        {"category": "entrance", "name": "VIP 3 Tage", "image": "tickets_vip.svg", "price": "CHF 420.–", "totalNumber": 450, "available": 448, "boxesColored": 10, "boxesGrey": 0, "style": "hiphop"},
+        {"category": "camping", "name": "Standard Zelt", "image": "tickets_camping_standard.svg", "price": "CHF 25.–", "totalNumber": 1000, "available": 640, "boxesColored": 6, "boxesGrey": 4, "style": "hiphop"},
+        {"category": "camping", "name": "VIP Zelt", "image": "tickets_camping_vip.svg", "price": "CHF 55.–", "totalNumber": 50, "available": 48, "boxesColored": 10, "boxesGrey": 0, "style": "hiphop"}
+      ],
+      "lineUp": [
+        {"day": "Freitag", "time": "17:00", "star1": "Kero Kero Bonito", "styleStar1": "indie", "star2": "Girls Names", "styleStar2": "indie" },
+        {"day": "Freitag", "time": "18:00", "star1": "Red Hot Chili Peppers", "styleStar1": "poprock", "star2": "Wu-Tang Clan", "styleStar2": "hiphop" },
+        {"day": "Freitag", "time": "19:00", "star1": "Tompaul", "styleStar1": "indie", "star2": "3 Doors Down", "styleStar2": "poprock" },
+        {"day": "Freitag", "time": "20:00", "star1": "Lauryn Hill", "styleStar1": "hiphop", "star2": "Muse", "styleStar2": "poprock" },
+        {"day": "Freitag", "time": "21:00", "star1": "The Horrors", "styleStar1": "indie", "star2": "", "styleStar2": "" },
+        {"day": "Freitag", "time": "22:00", "star1": "Darkstar", "styleStar1": "indie", "star2": "", "styleStar2": "" },
+        {"day": "Freitag", "time": "23:00", "star1": "A=f/m", "styleStar1": "indie", "star2": "", "styleStar2": "" }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Paléo Festival",
+      "text": "Das eintätige Festival präsentiert Künstler, welche sich im Spannungsfeld zwischen verschiedensten musikalischen Strömungen und Einflüssen bewegen. Wir bieten Musikern, die sich für spannende, innovative und progressive Musik einsetzen eine Plattform. Das Fest findet mit einem atemberaubenden Ausblick über den Bodensee auf der Eggersrieter Höhe statt.",
+      "style": "hiphop",
+      "icon": "music_hiphop.svg",
+      "img": "openair_basel/openair_basel.jpg",
+      "location": "Eggersriet SG",
+      "date": "13. Aug – 15. Aug 2016",
+      "selected": false,
+      "tickets": [
+        {"category": "Allg", "name":  "Total", "image": "tickets_standard.svg", "price": "", "totalNumber": 13000, "available": 973, "boxesColored": 2, "boxesGrey": 8, "style": "hiphop"},
+        {"category": "entrance", "name": "1 Tag Pass", "image": "tickets_standard.svg", "price": "CHF 75.–", "totalNumber": 600, "available": 480, "boxesColored": 8, "boxesGrey": 2, "style": "hiphop"},
+        {"category": "entrance", "name": "3 Tage Pass", "image": "tickets_standard.svg", "price": "CHF 375.–", "totalNumber": 600, "available": 0, "boxesColored": 0, "boxesGrey": 10, "style": "hiphop"},
+        {"category": "entrance", "name": "VIP 1 Tag", "image": "tickets_vip.svg", "price": "CHF 225.–", "totalNumber": 75, "available": 45, "boxesColored": 6, "boxesGrey": 4, "style": "hiphop"},
+        {"category": "entrance", "name": "VIP 3 Tage", "image": "tickets_vip.svg", "price": "CHF 420.–", "totalNumber": 450, "available": 448, "boxesColored": 10, "boxesGrey": 0, "style": "hiphop"},
+        {"category": "camping", "name": "Standard Zelt", "image": "tickets_camping_standard.svg", "price": "CHF 25.–", "totalNumber": 1000, "available": 640, "boxesColored": 6, "boxesGrey": 4, "style": "hiphop"},
+        {"category": "camping", "name": "VIP Zelt", "image": "tickets_camping_vip.svg", "price": "CHF 55.–", "totalNumber": 50, "available": 48, "boxesColored": 10, "boxesGrey": 0, "style": "hiphop"}
+      ],
+      "lineUp": [
+        {"day": "Freitag", "time": "17:00", "star1": "Kero Kero Bonito", "styleStar1": "indie", "star2": "Girls Names", "styleStar2": "indie" },
+        {"day": "Freitag", "time": "18:00", "star1": "Red Hot Chili Peppers", "styleStar1": "poprock", "star2": "Wu-Tang Clan", "styleStar2": "hiphop" },
+        {"day": "Freitag", "time": "19:00", "star1": "Tompaul", "styleStar1": "indie", "star2": "3 Doors Down", "styleStar2": "poprock" },
+        {"day": "Freitag", "time": "20:00", "star1": "Lauryn Hill", "styleStar1": "hiphop", "star2": "Muse", "styleStar2": "poprock" },
+        {"day": "Freitag", "time": "21:00", "star1": "The Horrors", "styleStar1": "indie", "star2": "", "styleStar2": "" },
+        {"day": "Freitag", "time": "22:00", "star1": "Darkstar", "styleStar1": "indie", "star2": "", "styleStar2": "" },
+        {"day": "Freitag", "time": "23:00", "star1": "A=f/m", "styleStar1": "indie", "star2": "", "styleStar2": "" }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Sur Le Lac",
+      "text": "Das eintätige Festival präsentiert Künstler, welche sich im Spannungsfeld zwischen verschiedensten musikalischen Strömungen und Einflüssen bewegen. Wir bieten Musikern, die sich für spannende, innovative und progressive Musik einsetzen eine Plattform. Das Fest findet mit einem atemberaubenden Ausblick über den Bodensee auf der Eggersrieter Höhe statt.",
+      "style": "indie",
+      "icon": "music_indie.svg",
+      "img": "surLeLac/surLeLac_kachel.jpg",
+      "location": "Eggersriet SG",
+      "date": "13. Aug – 15. Aug 2016",
+      "selected": true,
+      "tickets": [
+        {"category": "Allg", "name": "Total", "image": "tickets_standard.svg", "price": "", "totalNumber": 1725, "available": 973, "boxesColored": 6, "boxesGrey": 4, "style": "indie"},
+        {"category": "entrance", "name": "1 Tag Pass", "image": "tickets_standard.svg", "price": "CHF 75.–", "totalNumber": 600, "available": 480, "boxesColored": 8, "boxesGrey": 2, "style": "indie"},
+        {"category": "entrance", "name": "3 Tage Pass", "image": "tickets_standard.svg", "price": "CHF 375.–", "totalNumber": 600, "available": 0, "boxesColored": 0, "boxesGrey": 10, "style": "indie"},
+        {"category": "entrance", "name": "VIP 1 Tag", "image": "tickets_vip.svg", "price": "CHF 225.–", "totalNumber": 75, "available": 45, "boxesColored": 6, "boxesGrey": 4, "style": "indie"},
+        {"category": "entrance", "name": "VIP 3 Tage", "image": "tickets_vip.svg", "price": "CHF 420.–", "totalNumber": 450, "available": 448, "boxesColored": 10, "boxesGrey": 0, "style": "indie"},
+        {"category": "camping", "name": "Standard Zelt", "image": "tickets_camping_standard.svg", "price": "CHF 25.–", "totalNumber": 1000, "available": 640, "boxesColored": 6, "boxesGrey": 4, "style": "indie"},
+        {"category": "camping", "name": "VIP Zelt", "image": "tickets_camping_vip.svg", "price": "CHF 55.–", "totalNumber": 50, "available": 48, "boxesColored": 10, "boxesGrey": 0, "style": "indie"}
+      ],
+      "lineUp": [
+        {"day": "Freitag", "time": "17:00", "star1": "Kero Kero Bonito", "styleStar1": "indie", "star2": "Girls Names", "styleStar2": "indie" },
+        {"day": "Freitag", "time": "18:00", "star1": "Red Hot Chili Peppers", "styleStar1": "poprock", "star2": "Wu-Tang Clan", "styleStar2": "hiphop" },
+        {"day": "Freitag", "time": "19:00", "star1": "Tompaul", "styleStar1": "indie", "star2": "3 Doors Down", "styleStar2": "poprock" },
+        {"day": "Freitag", "time": "20:00", "star1": "Lauryn Hill", "styleStar1": "hiphop", "star2": "Muse", "styleStar2": "poprock" },
+        {"day": "Freitag", "time": "21:00", "star1": "The Horrors", "styleStar1": "indie", "star2": "", "styleStar2": "" },
+        {"day": "Freitag", "time": "22:00", "star1": "Darkstar", "styleStar1": "indie", "star2": "", "styleStar2": "" },
+        {"day": "Freitag", "time": "23:00", "star1": "A=f/m", "styleStar1": "indie", "star2": "", "styleStar2": "" }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Openair St. Gallen",
+      "text": "Das eintätige Festival präsentiert Künstler, welche sich im Spannungsfeld zwischen verschiedensten musikalischen Strömungen und Einflüssen bewegen. Wir bieten Musikern, die sich für spannende, innovative und progressive Musik einsetzen eine Plattform. Das Fest findet mit einem atemberaubenden Ausblick über den Bodensee auf der Eggersrieter Höhe statt.",
+      "style": "poprock",
+      "icon": "music_poprock.svg",
+      "img": "surLeLac/surLeLac_kachel.jpg",
+      "location": "St.Gallen SG",
+      "date": "13. Aug – 15. Aug 2016",
+      "selected": false,
+      "tickets": [
+        {"category": "Allg", "name": "Total", "image": "tickets_standard.svg", "price": "", "totalNumber": 30000, "available": 20000, "boxesColored": 7, "boxesGrey": 3, "style": "poprock"},
+        {"category": "entrance", "name": "1 Tag Pass", "image": "tickets_standard.svg", "price": "CHF 75.–", "totalNumber": 600, "available": 480, "boxesColored": 8, "boxesGrey": 2, "style": "poprock"},
+        {"category": "entrance", "name": "3 Tage Pass", "image": "tickets_standard.svg", "price": "CHF 375.–", "totalNumber": 600, "available": 0, "boxesColored": 0, "boxesGrey": 10, "style": "poprock"},
+        {"category": "entrance", "name": "VIP 1 Tag", "image": "tickets_vip.svg", "price": "CHF 225.–", "totalNumber": 75, "available": 45, "boxesColored": 6, "boxesGrey": 4, "style": "poprock"},
+        {"category": "entrance", "name": "VIP 3 Tage", "image": "tickets_vip.svg", "price": "CHF 420.–", "totalNumber": 450, "available": 448, "boxesColored": 10, "boxesGrey": 0, "style": "poprock"},
+        {"category": "camping", "name": "Standard Zelt", "image": "tickets_camping_standard.svg", "price": "CHF 25.–", "totalNumber": 1000, "available": 640, "boxesColored": 6, "boxesGrey": 4, "style": "poprock"},
+        {"category": "camping", "name": "VIP Zelt", "image": "tickets_camping_vip.svg", "price": "CHF 55.–", "totalNumber": 50, "available": 48, "boxesColored": 10, "boxesGrey": 0, "style": "poprock"}
+      ],
+      "lineUp": [
+        {"day": "Freitag", "time": "17:00", "star1": "Kero Kero Bonito", "styleStar1": "indie", "star2": "Girls Names", "styleStar2": "indie" },
+        {"day": "Freitag", "time": "18:00", "star1": "Red Hot Chili Peppers", "styleStar1": "poprock", "star2": "Wu-Tang Clan", "styleStar2": "hiphop" },
+        {"day": "Freitag", "time": "19:00", "star1": "Tompaul", "styleStar1": "indie", "star2": "3 Doors Down", "styleStar2": "poprock" },
+        {"day": "Freitag", "time": "20:00", "star1": "Lauryn Hill", "styleStar1": "hiphop", "star2": "Muse", "styleStar2": "poprock" },
+        {"day": "Freitag", "time": "21:00", "star1": "The Horrors", "styleStar1": "indie", "star2": "", "styleStar2": "" },
+        {"day": "Freitag", "time": "22:00", "star1": "Darkstar", "styleStar1": "indie", "star2": "", "styleStar2": "" },
+        {"day": "Freitag", "time": "23:00", "star1": "A=f/m", "styleStar1": "indie", "star2": "", "styleStar2": "" }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Blues & Jazz Festival",
+      "text": "Das eintätige Festival präsentiert Künstler, welche sich im Spannungsfeld zwischen verschiedensten musikalischen Strömungen und Einflüssen bewegen. Wir bieten Musikern, die sich für spannende, innovative und progressive Musik einsetzen eine Plattform. Das Fest findet mit einem atemberaubenden Ausblick über den Bodensee auf der Eggersrieter Höhe statt.",
+      "style": "jazz",
+      "icon": "music_jazz.svg",
+      "img": "surLeLac/surLeLac_kachel.jpg",
+      "location": "Eggersriet SG",
+      "date": "13. Aug – 15. Aug 2016",
+      "selected": true,
+      "tickets": [
+        {"category": "Allg", "name": "Total", "image": "tickets_standard.svg", "price": "", "totalNumber": 1725, "available": 973, "boxesColored": 6, "boxesGrey": 4, "style": "jazz"},
+        {"category": "entrance", "name": "1 Tag Pass", "image": "tickets_standard.svg", "price": "CHF 75.–", "totalNumber": 600, "available": 480, "boxesColored": 8, "boxesGrey": 2, "style": "jazz"},
+        {"category": "entrance", "name": "3 Tage Pass", "image": "tickets_standard.svg", "price": "CHF 375.–", "totalNumber": 600, "available": 0, "boxesColored": 0, "boxesGrey": 10, "style": "jazz"},
+        {"category": "entrance", "name": "VIP 1 Tag", "image": "tickets_vip.svg", "price": "CHF 225.–", "totalNumber": 75, "available": 45, "boxesColored": 6, "boxesGrey": 4, "style": "jazz"},
+        {"category": "entrance", "name": "VIP 3 Tage", "image": "tickets_vip.svg", "price": "CHF 420.–", "totalNumber": 450, "available": 448, "boxesColored": 10, "boxesGrey": 0, "style": "jazz"},
+        {"category": "camping", "name": "Standard Zelt", "image": "tickets_camping_standard.svg", "price": "CHF 25.–", "totalNumber": 1000, "available": 640, "boxesColored": 6, "boxesGrey": 4, "style": "jazz"},
+        {"category": "camping", "name": "VIP Zelt", "image": "tickets_camping_vip.svg", "price": "CHF 55.–", "totalNumber": 50, "available": 48, "boxesColored": 10, "boxesGrey": 0, "style": "jazz"}
+      ],
+      "lineUp": [
+        {"day": "Freitag", "time": "17:00", "star1": "Kero Kero Bonito", "styleStar1": "indie", "star2": "Girls Names", "styleStar2": "indie" },
+        {"day": "Freitag", "time": "18:00", "star1": "Red Hot Chili Peppers", "styleStar1": "poprock", "star2": "Wu-Tang Clan", "styleStar2": "hiphop" },
+        {"day": "Freitag", "time": "19:00", "star1": "Tompaul", "styleStar1": "indie", "star2": "3 Doors Down", "styleStar2": "poprock" },
+        {"day": "Freitag", "time": "20:00", "star1": "Lauryn Hill", "styleStar1": "hiphop", "star2": "Muse", "styleStar2": "poprock" },
+        {"day": "Freitag", "time": "21:00", "star1": "The Horrors", "styleStar1": "indie", "star2": "", "styleStar2": "" },
+        {"day": "Freitag", "time": "22:00", "star1": "Darkstar", "styleStar1": "indie", "star2": "", "styleStar2": "" },
+        {"day": "Freitag", "time": "23:00", "star1": "A=f/m", "styleStar1": "indie", "star2": "", "styleStar2": "" }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Sur Le Lac 1",
+      "text": "Das eintätige Festival präsentiert Künstler, welche sich im Spannungsfeld zwischen verschiedensten musikalischen Strömungen und Einflüssen bewegen. Wir bieten Musikern, die sich für spannende, innovative und progressive Musik einsetzen eine Plattform. Das Fest findet mit einem atemberaubenden Ausblick über den Bodensee auf der Eggersrieter Höhe statt.",
+      "style": "jazz",
+      "icon": "music_jazz.svg",
+      "img": "surLeLac/surLeLac_kachel.jpg",
+      "location": "Eggersriet SG",
+      "date": "13. Aug – 15. Aug 2016",
+      "selected": true,
+      "tickets": [
+        {"category": "Allg", "name": "Total", "image": "tickets_standard.svg", "price": "", "totalNumber": 675, "available": 480, "boxesColored": 6, "boxesGrey": 4, "style": "jazz"},
+        {"category": "entrance", "name": "1 Tag Pass", "image": "tickets_standard.svg", "price": "CHF 75.–", "totalNumber": 600, "available": 480, "boxesColored": 8, "boxesGrey": 2, "style": "jazz"},
+        {"category": "entrance", "name": "3 Tage Pass", "image": "tickets_standard.svg", "price": "CHF 375.–", "totalNumber": 600, "available": 0, "boxesColored": 0, "boxesGrey": 10, "style": "jazz"},
+        {"category": "entrance", "name": "VIP 1 Tag", "image": "tickets_vip.svg", "price": "CHF 225.–", "totalNumber": 75, "available": 45, "boxesColored": 6, "boxesGrey": 4, "style": "jazz"},
+        {"category": "entrance", "name": "VIP 3 Tage", "image": "tickets_vip.svg", "price": "CHF 420.–", "totalNumber": 450, "available": 448, "boxesColored": 10, "boxesGrey": 0, "style": "jazz"},
+        {"category": "camping", "name": "Standard Zelt", "image": "tickets_camping_standard.svg", "price": "CHF 25.–", "totalNumber": 1000, "available": 640, "boxesColored": 6, "boxesGrey": 4, "style": "jazz"},
+        {"category": "camping", "name": "VIP Zelt", "image": "tickets_camping_vip.svg", "price": "CHF 55.–", "totalNumber": 50, "available": 48, "boxesColored": 10, "boxesGrey": 0, "style": "jazz"}
+      ],
+      "lineUp": [
+        {"day": "Freitag", "time": "17:00", "star1": "Kero Kero Bonito", "styleStar1": "indie", "star2": "Girls Names", "styleStar2": "indie" },
+        {"day": "Freitag", "time": "18:00", "star1": "Red Hot Chili Peppers", "styleStar1": "poprock", "star2": "Wu-Tang Clan", "styleStar2": "hiphop" },
+        {"day": "Freitag", "time": "19:00", "star1": "Tompaul", "styleStar1": "indie", "star2": "3 Doors Down", "styleStar2": "poprock" },
+        {"day": "Freitag", "time": "20:00", "star1": "Lauryn Hill", "styleStar1": "hiphop", "star2": "Muse", "styleStar2": "poprock" },
+        {"day": "Freitag", "time": "21:00", "star1": "The Horrors", "styleStar1": "indie", "star2": "", "styleStar2": "" },
+        {"day": "Freitag", "time": "22:00", "star1": "Darkstar", "styleStar1": "indie", "star2": "", "styleStar2": "" },
+        {"day": "Freitag", "time": "23:00", "star1": "A=f/m", "styleStar1": "indie", "star2": "", "styleStar2": "" }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Sur Le Lac 2",
+      "text": "Das eintätige Festival präsentiert Künstler, welche sich im Spannungsfeld zwischen verschiedensten musikalischen Strömungen und Einflüssen bewegen. Wir bieten Musikern, die sich für spannende, innovative und progressive Musik einsetzen eine Plattform. Das Fest findet mit einem atemberaubenden Ausblick über den Bodensee auf der Eggersrieter Höhe statt.",
+      "style": "poprock",
+      "icon": "music_poprock.svg",
+      "img": "surLeLac/surLeLac_kachel.jpg",
+      "location": "Eggersriet SG",
+      "date": "13. Aug – 15. Aug 2016",
+      "selected": false,
+      "tickets": [
+        {"category": "Allg", "name": "Total", "image": "tickets_standard.svg", "price": "", "totalNumber": 675, "available": 480, "boxesColored": 6, "boxesGrey": 4, "style": "poprock"},
+        {"category": "entrance", "name": "1 Tag Pass", "image": "tickets_standard.svg", "price": "CHF 75.–", "totalNumber": 600, "available": 480, "boxesColored": 8, "boxesGrey": 2, "style": "poprock"},
+        {"category": "entrance", "name": "3 Tage Pass", "image": "tickets_standard.svg", "price": "CHF 375.–", "totalNumber": 600, "available": 0, "boxesColored": 0, "boxesGrey": 10, "style": "poprock"},
+        {"category": "entrance", "name": "VIP 1 Tag", "image": "tickets_vip.svg", "price": "CHF 225.–", "totalNumber": 75, "available": 45, "boxesColored": 6, "boxesGrey": 4, "style": "poprock"},
+        {"category": "entrance", "name": "VIP 3 Tage", "image": "tickets_vip.svg", "price": "CHF 420.–", "totalNumber": 450, "available": 448, "boxesColored": 10, "boxesGrey": 0, "style": "poprock"},
+        {"category": "camping", "name": "Standard Zelt", "image": "tickets_camping_standard.svg", "price": "CHF 25.–", "totalNumber": 1000, "available": 640, "boxesColored": 6, "boxesGrey": 4, "style": "poprock"},
+        {"category": "camping", "name": "VIP Zelt", "image": "tickets_camping_vip.svg", "price": "CHF 55.–", "totalNumber": 50, "available": 48, "boxesColored": 10, "boxesGrey": 0, "style": "poprock"}
+      ],
+      "lineUp": [
+        {"day": "Freitag", "time": "17:00", "star1": "Kero Kero Bonito", "styleStar1": "indie", "star2": "Girls Names", "styleStar2": "indie" },
+        {"day": "Freitag", "time": "18:00", "star1": "Red Hot Chili Peppers", "styleStar1": "poprock", "star2": "Wu-Tang Clan", "styleStar2": "hiphop" },
+        {"day": "Freitag", "time": "19:00", "star1": "Tompaul", "styleStar1": "indie", "star2": "3 Doors Down", "styleStar2": "poprock" },
+        {"day": "Freitag", "time": "20:00", "star1": "Lauryn Hill", "styleStar1": "hiphop", "star2": "Muse", "styleStar2": "poprock" },
+        {"day": "Freitag", "time": "21:00", "star1": "The Horrors", "styleStar1": "indie", "star2": "", "styleStar2": "" },
+        {"day": "Freitag", "time": "22:00", "star1": "Darkstar", "styleStar1": "indie", "star2": "", "styleStar2": "" },
+        {"day": "Freitag", "time": "23:00", "star1": "A=f/m", "styleStar1": "indie", "star2": "", "styleStar2": "" }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Open Ear Festival",
+      "text": "Das eintätige Festival präsentiert Künstler, welche sich im Spannungsfeld zwischen verschiedensten musikalischen Strömungen und Einflüssen bewegen. Wir bieten Musikern, die sich für spannende, innovative und progressive Musik einsetzen eine Plattform. Das Fest findet mit einem atemberaubenden Ausblick über den Bodensee auf der Eggersrieter Höhe statt.",
+      "style": "hiphop",
+      "icon": "music_hiphop.svg",
+      "img": "surLeLac/surLeLac_kachel.jpg",
+      "location": "Eggersriet SG",
+      "date": "13. Aug – 15. Aug 2016",
+      "selected": false,
+      "tickets": [
+        {"category": "Allg", "name": "Total", "image": "tickets_standard.svg", "price": "", "totalNumber": 1200, "available": 973, "boxesColored": 8, "boxesGrey": 2, "style": "hiphop"},
+        {"category": "entrance", "name": "1 Tag Pass", "image": "tickets_standard.svg", "price": "CHF 75.–", "totalNumber": 600, "available": 480, "boxesColored": 8, "boxesGrey": 2, "style": "hiphop"},
+        {"category": "entrance", "name": "3 Tage Pass", "image": "tickets_standard.svg", "price": "CHF 375.–", "totalNumber": 600, "available": 0, "boxesColored": 0, "boxesGrey": 10, "style": "hiphop"},
+        {"category": "entrance", "name": "VIP 1 Tag", "image": "tickets_vip.svg", "price": "CHF 225.–", "totalNumber": 75, "available": 45, "boxesColored": 6, "boxesGrey": 4, "style": "hiphop"},
+        {"category": "entrance", "name": "VIP 3 Tage", "image": "tickets_vip.svg", "price": "CHF 420.–", "totalNumber": 450, "available": 448, "boxesColored": 10, "boxesGrey": 0, "style": "hiphop"},
+        {"category": "camping", "name": "Standard Zelt", "image": "tickets_camping_standard.svg", "price": "CHF 25.–", "totalNumber": 1000, "available": 640, "boxesColored": 6, "boxesGrey": 4, "style": "hiphop"},
+        {"category": "camping", "name": "VIP Zelt", "image": "tickets_camping_vip.svg", "price": "CHF 55.–", "totalNumber": 50, "available": 48, "boxesColored": 10, "boxesGrey": 0, "style": "hiphop"}
+      ],
+      "lineUp": [
+        {"day": "Freitag", "time": "17:00", "star1": "Kero Kero Bonito", "styleStar1": "indie", "star2": "Girls Names", "styleStar2": "indie" },
+        {"day": "Freitag", "time": "18:00", "star1": "Red Hot Chili Peppers", "styleStar1": "poprock", "star2": "Wu-Tang Clan", "styleStar2": "hiphop" },
+        {"day": "Freitag", "time": "19:00", "star1": "Tompaul", "styleStar1": "indie", "star2": "3 Doors Down", "styleStar2": "poprock" },
+        {"day": "Freitag", "time": "20:00", "star1": "Lauryn Hill", "styleStar1": "hiphop", "star2": "Muse", "styleStar2": "poprock" },
+        {"day": "Freitag", "time": "21:00", "star1": "The Horrors", "styleStar1": "indie", "star2": "", "styleStar2": "" },
+        {"day": "Freitag", "time": "22:00", "star1": "Darkstar", "styleStar1": "indie", "star2": "", "styleStar2": "" },
+        {"day": "Freitag", "time": "23:00", "star1": "A=f/m", "styleStar1": "indie", "star2": "", "styleStar2": "" }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Openair Basel",
+      "text": "Das eintätige Festival präsentiert Künstler, welche sich im Spannungsfeld zwischen verschiedensten musikalischen Strömungen und Einflüssen bewegen. Wir bieten Musikern, die sich für spannende, innovative und progressive Musik einsetzen eine Plattform. Das Fest findet mit einem atemberaubenden Ausblick über den Bodensee auf der Eggersrieter Höhe statt.",
+      "style": "electronic",
+      "icon": "music_electronic.svg",
+      "img": "surLeLac/surLeLac_kachel.jpg",
+      "location": "Basel, BS",
+      "date": "13. Aug – 15. Aug 2016",
+      "selected": false,
+      "tickets": [
+        {"category": "Allg", "name": "Total", "image": "tickets_standard.svg", "price": "", "totalNumber": 20000, "available": 2000, "boxesColored": 1, "boxesGrey": 9, "style": "electronic"},
+        {"category": "entrance", "name": "1 Tag Pass", "image": "tickets_standard.svg", "price": "CHF 75.–", "totalNumber": 600, "available": 480, "boxesColored": 8, "boxesGrey": 2, "style": "electronic"},
+        {"category": "entrance", "name": "3 Tage Pass", "image": "tickets_standard.svg", "price": "CHF 375.–", "totalNumber": 600, "available": 0, "boxesColored": 0, "boxesGrey": 10, "style": "electronic"},
+        {"category": "entrance", "name": "VIP 1 Tag", "image": "tickets_vip.svg", "price": "CHF 225.–", "totalNumber": 75, "available": 45, "boxesColored": 6, "boxesGrey": 4, "style": "electronic"},
+        {"category": "entrance", "name": "VIP 3 Tage", "image": "tickets_vip.svg", "price": "CHF 420.–", "totalNumber": 450, "available": 448, "boxesColored": 10, "boxesGrey": 0, "style": "electronic"},
+        {"category": "camping", "name": "Standard Zelt", "image": "tickets_camping_standard.svg", "price": "CHF 25.–", "totalNumber": 1000, "available": 640, "boxesColored": 6, "boxesGrey": 4, "style": "electronic"},
+        {"category": "camping", "name": "VIP Zelt", "image": "tickets_camping_vip.svg", "price": "CHF 55.–", "totalNumber": 50, "available": 48, "boxesColored": 10, "boxesGrey": 0, "style": "electronic"}
+      ],
+      "lineUp": [
+        {"day": "Freitag", "time": "17:00", "star1": "Kero Kero Bonito", "styleStar1": "indie", "star2": "Girls Names", "styleStar2": "indie" },
+        {"day": "Freitag", "time": "18:00", "star1": "Red Hot Chili Peppers", "styleStar1": "poprock", "star2": "Wu-Tang Clan", "styleStar2": "hiphop" },
+        {"day": "Freitag", "time": "19:00", "star1": "Tompaul", "styleStar1": "indie", "star2": "3 Doors Down", "styleStar2": "poprock" },
+        {"day": "Freitag", "time": "20:00", "star1": "Lauryn Hill", "styleStar1": "hiphop", "star2": "Muse", "styleStar2": "poprock" },
+        {"day": "Freitag", "time": "21:00", "star1": "The Horrors", "styleStar1": "indie", "star2": "", "styleStar2": "" },
+        {"day": "Freitag", "time": "22:00", "star1": "Darkstar", "styleStar1": "indie", "star2": "", "styleStar2": "" },
+        {"day": "Freitag", "time": "23:00", "star1": "A=f/m", "styleStar1": "indie", "star2": "", "styleStar2": "" }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": 1,
+      "text": "ALTERNATIV",
+      "counter": 18,
+      "selected": false,
+      "style": "alternative"
+    },
+    {
+      "id": 2,
+      "text": "COUNTRY",
+      "counter": 3,
+      "selected": false,
+      "style": "country"
+    },
+    {
+      "id": 3,
+      "text": "ELECTRONIC",
+      "counter": 10,
+      "selected": false,
+      "style": "electronic"
+    },
+    {
+      "id": 4,
+      "text": "HIPHOP",
+      "counter": 2,
+      "selected": true,
+      "style": "hiphop"
+    },
+    {
+      "id": 5,
+      "text": "INDIE",
+      "counter": 5,
+      "selected": false,
+      "style": "indie"
+    },
+    {
+      "id": 6,
+      "text": "JAZZ",
+      "counter": 3,
+      "selected": false,
+      "style": "jazz"
+    },
+    {
+      "id": 7,
+      "text": "METAL",
+      "counter": 5,
+      "selected": false,
+      "style": "metal"
+    },
+    {
+      "id": 8,
+      "text": "POP & ROCK",
+      "counter": 9,
+      "selected": false,
+      "style": "poprock"
+    },
+    {
+      "id": 9,
+      "text": "R & B",
+      "counter": 25,
+      "selected": true,
+      "style": "rnb"
+    },
+    {
+      "id": 10,
+      "text": "SOUL",
+      "counter": 15,
+      "selected": false,
+      "style": "soul"
+    }
+  ],
+  "magazin-posts": [
+    {
+      "id": 1,
+      "category": "allgemein",
+      "magazinePostTitle": "Einfach bloss nichts vergessen",
+      "magazinePostText": "Zelt, Schlafsack, Isomatte vergessen: 3 Tage wach! Regenjacke, Mütze, Handtuch: 3 Tage nass! Zahnbürste, Deo, Socken: 3 Tage baah! Es geht auch anders. Der Festivalguide Check gegen Alzheimer und Co."
+    },
+    {
+      "id": 2,
+      "category": "allgemein",
+      "magazinePostTitle": "Erste Hilfe und die Reiseapotheke",
+      "magazinePostText": "Was der Arzt rät: Sonnenstich, Kater, Fuss umgeknickt … Festivals stecken voller versteckten Gefahren. Wir haben unseren Hausarzt angerufen und gefragt, was man unbedingt bedenken und beachten sollte damit man wieder gesund und munter vom Festival nach Hause kommt."
+    },
+    {
+      "id": 3,
+      "category": "allgemein",
+      "magazinePostTitle": "Wie soll ich mich bei Gewitter verhalten?",
+      "magazinePostText": "Die Sturm- und Gewitterwarnungen auf Festivals nehmen zu. Blitzeinschläge führen immer wieder zu zahlreichen Verletzten. Da wir nicht davon ausgehen können, dass sich diese Entwicklung wieder umkehrt, müssen wir damit rechnen, dass Festivals immer wieder davon betroffen sein werden. Was sollte man also beachten?"
+    },
+    {
+      "id": 4,
+      "category": "allgemein",
+      "magazinePostTitle": "Tipps zum Bier kaltstellen",
+      "magazinePostText": "Mit diesen Ratschlägen habt ihr auch auf dem Festival immer kühles Bier. Was will man noch mehr."
+    },
+    {
+      "id": 5,
+      "category": "allgemein",
+      "magazinePostTitle": "7 Life Hacks für den Festivalbesuch",
+      "magazinePostText": "Mit diesen Tricks macht ihr euch das Campen auf dem Festival noch leichter. Es gibt viele kreative Lösungen mit Einmalseife, Klopapierspender, Grillanzünder, Kaffebeutel und Strohhalmen."
+    },
+    {
+      "id": 6,
+      "category": "allgemein",
+      "magazinePostTitle": "Wo stelle ich mein Zelt auf?",
+      "magazinePostText": "Der prefekt Platz auf dem Campingplatz muss zuerst gefunden werden. Ältere Festivalbesucher können bestätigen: Die Auswahl des Zeltplatzes ist ein Lernen durch Schmerzen. Wir möchten euch daher gut vorbereiten um euch ein paar Qualen ersparen zu können."
+    },
+    {
+      "id": 7,
+      "category": "allgemein",
+      "magazinePostTitle": "Erste Hilfe und die Reiseapotheke",
+      "magazinePostText": "Was der Arzt rät: Sonnenstich, Kater, Fuss umgeknickt … Festivals stecken voller versteckten Gefahren. Wir haben unseren Hausarzt angerufen und gefragt, was man unbedingt bedenken und beachten sollte damit man wieder gesund und munter vom Festival nach Hause kommt."
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+/**
+Für Slider
+ */
+
+.slider {
+  &__wrapper {
+    grid-area: slider;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__button--pre,
+  &__button--next {
+    background-color: transparent;
+    border: 1px solid $primary;
+    display: none;
+    height: 48px;
+    line-height: 55px;
+    width: 48px;
+  }
+
+  &__slides {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  &__item {
+    display: none;
+    height: 232px;
+    overflow: hidden;
+  }
+
+  &__item img {
+    width: 343px;
+  }
+
+  // Animation wird ausgelöst von links einschieben
+  &__item.left {
+    animation: left 0.8s ease-in-out;
+    position: relative;
+  }
+
+  // Animation wird ausgelöst von rechts einschieben
+  &__item.right {
+    animation: right 0.8s ease-in-out;
+    position: relative;
+  }
+
+  &__item.selected {
+    display: block;
+  }
+
+  &__item.next,
+  &__item.pre {
+    display: none;
+    width: 40px;
+    z-index: 3;
+  }
+
+  &__item.pre img {
+    margin-left: -549px;
+  }
+
+}
+
+.slide-item {
+  &__dot {
+    background-color: $primary--4;
+    border: 0;
+    display: inline-block;
+    height: 4px;
+    margin: 0 $spacer-xxs;
+    width: 24px;
+  }
+
+  &__dot.selected {
+    background-color: $primary;
+  }
+}
+
+// Animation für Links-Einschub
+@keyframes left {
+  from {
+    left: -600px;
+    opacity: 0;
+  }
+
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+
+// Animation für Links-Einschub
+@keyframes left {
+  from {
+    left: -600px;
+    opacity: 0;
+  }
+
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+// Animation für Rechts-Einschub
+@keyframes right {
+  from {
+    left: 543px;
+    opacity: 0;
+  }
+
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@media all and (min-width: $width-tablet) {
+  .slider {
+    &__wrapper {
+      align-items: center;
+      display: grid;
+      grid-area: slider;
+      grid-column-gap: $spacer-m;
+      grid-row-gap: $spacer-l;
+      grid-template-columns: 48px 534px 48px;
+      grid-template-rows: 352px 4px;
+      justify-content: center;
+      margin: $spacer-xxl 0;
+      width: 100%;
+    }
+
+    &__item {
+      height: 352px;
+    }
+
+    &__item img {
+      width: 100%;
+    }
+
+    &__button--pre,
+    &__button--next {
+      display: block;
+    }
+
+    &__dots {
+      grid-column: 1/span 3;
+      grid-row: 2 / span 1;
+    }
+  }
+}
+
+@media all and (min-width: $width-desktop) {
+  .slider {
+    &__wrapper {
+      grid-template-columns: 48px auto 48px;
+      grid-template-rows: 392px 4px;
+      padding-left: calc(15% - 72px);
+      padding-right: calc(30% + 56px);
+    }
+    &__wrapper:hover .slider__button--next,
+    &__wrapper:hover .slider__button--pre {
+      visibility: visible;
+    }
+
+    &__slides {
+      display: grid;
+      grid-template-columns: 40px auto 40px;
+      grid-template-rows: auto;
+    }
+
+    &__button--pre,
+    &__button--next {
+      visibility: hidden;
+    }
+
+    &__item {
+      height: 392px;
+    }
+
+    &__item img {
+      width: 593px;
+    }
+
+    &__item.selected {
+      grid-column: 1 / span 3;
+      grid-row: 1 / 2;
+    }
+
+    &__item.next {
+      grid-column: 3 / span 1;
+      grid-row: 1 / 2;
+    }
+
+    &__item.pre {
+      grid-column: 1 / span 1;
+      grid-row: 1 / 2;
+    }
+
+    &__item.next,
+    &__item.pre {
+      display: block;
+    }
+  }
+}

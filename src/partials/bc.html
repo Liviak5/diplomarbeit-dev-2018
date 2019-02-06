@@ -1,0 +1,42 @@
+<!--Breadcrumb start-->
+<ul class="bc__list">
+    <li class="bc__item">
+        <a class="bc__item-link" href="{{root}}">
+            <img src="{{root}}assets/media/icons/navigation_home.svg" alt="Home">
+        </a>
+    </li>
+    {{#ifpage 'festival_overview' 'ticket_overview' 'detail' 'ticket_buy'}}
+    <span class="bc__text">›</span>
+    <li class="bc__item">
+        {{#ifpage 'festival_overview' 'detail' 'ticket_buy'}}<a href="{{root}}content/festival_overview.html" class="bc__text">Festivals</a>{{/ifpage}}
+        {{#ifpage 'ticket_overview'}}<a href="{{root}}content/ticket_overview.html" class="bc__text">Tickets</a>{{/ifpage}}
+        <span class="bc__icon"></span>
+        <ul class="bc__sublist">
+            {{#unlesspage 'festival_overview' 'detail'}}<li class="bc__subitem"><a class="bc__text" href="{{root}}content/festival_overview.html">Festivals</a></li>{{/unlesspage}}
+            {{#unlesspage 'ticket_overview' 'ticket_buy'}}<li class="bc__subitem"><a class="bc__text" href="{{root}}content/ticket_overview.html">Tickets</a></li>{{/unlesspage}}
+            <li class="bc__subitem"><a class="bc__text" href="{{root}}#magazin">Magazin</a></li>
+            <li class="bc__subitem"><a class="bc__text" href="{{root}}#news">News</a></li>
+        </ul>
+    </li>
+    {{/ifpage}}
+    {{#ifpage 'detail' 'ticket_buy'}}
+    <span class="bc__text">›</span>
+    <li class="bc__item">
+        <a href="../content/detail.html" class="bc__text">Sur Le Lac</a>
+        <span class="bc__icon"></span>
+        <ul class="bc__sublist">
+            <li class="bc__subitem"><a class="bc__text" href="../content/detail.html">Openair Zürich</a></li>
+            <li class="bc__subitem"><a class="bc__text" href="../content/detail.html">Musikfestwochen</a></li>
+            <li class="bc__subitem"><a class="bc__text" href="../content/detail.html">Stars of Sounds</a></li>
+            <li class="bc__subitem"><a class="bc__text" href="../content/detail.html">Greenfield Festival</a></li>
+        </ul>
+    </li>
+    {{/ifpage}}
+    {{#ifpage 'ticket_buy'}}
+    <span class="bc__text">›</span>
+    <li class="bc__item">
+        <a href="../content/ticket_buy.html" class="bc__text">Tickets</a>
+    </li>
+    {{/ifpage}}
+</ul>
+<!--breadcrumb end-->

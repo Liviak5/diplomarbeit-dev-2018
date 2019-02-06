@@ -1,0 +1,18 @@
+/**
+Discover
+ */
+
+.discover {
+  &__wrapper {
+    grid-area: discover;
+    text-align: center;
+  }
+
+  &__lead-wrapper {
+    margin-top: $spacer-l;
+  }
+
+  &__button {
+    margin-top: $spacer-xl;
+  }
+}

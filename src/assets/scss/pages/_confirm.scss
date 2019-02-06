@@ -1,0 +1,61 @@
+.content__wrapper.confirm > .payments__wrapper {
+  grid-template-rows: 78px calc(100vh - 266px) 52px;
+
+  .lead__text {
+    color: $negative;
+    margin: $spacer-l 0;
+    padding: 0 $spacer-s;
+    text-align: center;
+  }
+}
+
+.confirm {
+  &__links {
+    padding: 0 $spacer-s;
+  }
+
+  &__link-dashboard {
+    background-color: $negative;
+    border: 0;
+    color: $primary;
+    text-align: center;
+  }
+
+  &__link-appdownload {
+    border-color: $negative;
+    color: $negative;
+    text-align: center;
+  }
+}
+
+@media all and (min-width: $width-tablet) {
+  .content__wrapper.confirm > .payments__wrapper {
+    grid-template-columns: 80%;
+    grid-template-rows: 158px calc(100vh - 402px) 52px;
+    justify-content: center;
+    padding-top: $spacer-xxl;
+  }
+
+  .confirm {
+    &__links {
+      display: grid;
+      grid-column-gap: $spacer-s;
+      grid-template-areas: 'app-download dashboard';
+      grid-template-columns: repeat(2, auto);
+    }
+
+    &__link-dashboard {
+      grid-area: dashboard;
+    }
+
+    &__link-appdownload {
+      grid-area: app-download;
+    }
+  }
+}
+
+@media all and (min-width: $width-desktop) {
+  .content__wrapper.confirm > .payments__wrapper {
+    grid-template-columns: 50%;
+  }
+}

@@ -1,0 +1,127 @@
+/* Navigation */
+
+.nav__wrapper {
+  align-items: center;
+  background-color: $primary;
+  display: none;
+  grid-template-areas: 'menu-list' 'search' 'social-media';
+  grid-template-columns: auto;
+  grid-template-rows: 4fr 1fr 1fr;
+  height: calc(100% - 64px);
+  justify-content: stretch;
+  opacity: 0.85;
+  position: fixed;
+  top: 64px;
+  width: 100%;
+  z-index: 900;
+
+  &.visible {
+    display: grid;
+  }
+}
+
+/**
+Abweichung vom Layout:
+Wenn das Fenster zu weit von unten zu gezogen ist,
+ist es besser wenn oben nicht strickt 240px bemessen werden,
+sondern der Content eingemittet ist
+ */
+.nav__menu {
+  grid-area: menu-list;
+  position: relative;
+  text-align: center;
+
+  &-list {
+    list-style-type: none;
+  }
+
+  &-list li {
+    line-height: 120px;
+  }
+
+  &-list li:hover,
+  &-list li:hover {
+    background-color: $negative;
+  }
+
+  &-list li a {
+    color: $negative;
+    text-decoration: none;
+  }
+
+  &-list li:hover a,
+  &-list li:focus a {
+    color: $primary;
+    text-decoration: none;
+  }
+}
+
+.nav__social-media {
+  display: grid;
+  grid-area: social-media;
+  grid-column-gap: $spacer-l;
+  grid-template-columns: repeat(5, 24px);
+  justify-content: center;
+
+  img {
+    max-height: 24px;
+    max-width: 24px;
+  }
+}
+
+/**
+TODO: Search-Navigation Margin 16px
+ */
+.nav__search {
+  border-bottom: 1px solid $negative;
+  grid-area: search;
+  margin: 0 $spacer-s;
+  width: 100%;
+
+  input {
+    background-color: transparent;
+    border: 0;
+    color: $negative;
+    height: 32px;
+    width: 90%;
+  }
+
+  &-button {
+    background-color: transparent;
+    border: 0;
+  }
+
+  &-button img {
+    height: 24px;
+  }
+}
+
+.nav__title {
+  cursor: pointer;
+}
+
+@media all and (min-width: 326px) {
+  .nav__search {
+    margin: 0 auto;
+    width: 392px;
+  }
+}
+
+@media all and (min-width: 769px) {
+  .nav__wrapper {
+    grid-column-gap: 216px;
+    grid-template-areas: 'menu-list menu-list'
+  'social-media search';
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .nav__social-media {
+    justify-self: end;
+  }
+
+  .nav__search {
+    justify-self: start;
+    margin: 0;
+  }
+}

@@ -1,0 +1,43 @@
+/**
+Für worth-knowing
+ */
+
+.wknow {
+  &__wrapper {
+    grid-area: w-know;
+    padding: 88px $spacer-s;
+  }
+
+  &__title {
+    margin-bottom: $spacer-m;
+    padding: 0;
+    text-align: left;
+  }
+
+  &__lead {
+    margin-bottom: 72px;
+  }
+}
+
+@media all and (min-width: $width-tablet) {
+  .wknow {
+    &__title,
+    &__lead {
+      padding: 0 $spacer-xxxl;
+    }
+  }
+}
+
+@media all and (min-width: $width-desktop) {
+  .wknow {
+    &__wrapper {
+      padding: $spacer-xxl 0;
+    }
+
+    &__title,
+    &__lead {
+      padding-left: 15%;
+      padding-right: 30%;
+    }
+  }
+}

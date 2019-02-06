@@ -1,0 +1,124 @@
+// für Line-Up-Wrapper
+
+.line-up {
+  &__wrapper {
+    background-color: $primary--5;
+    grid-area: line-up;
+    margin-top: $spacer-xxl;
+    padding: 88px $spacer-s;
+  }
+
+  &__title {
+    margin-bottom: $spacer-m;
+    padding: 0;
+    text-align: left;
+  }
+
+  &__lead {
+    margin-bottom: $spacer-l;
+  }
+
+  &__day-choice {
+    list-style-type: none;
+    margin-bottom: $spacer-xxl;
+  }
+
+  &__day-choice > li {
+    display: grid;
+    grid-template-columns: auto 24px;
+    justify-content: space-between;
+    padding: 0 $spacer-s;
+  }
+
+  &__day-choice > li img {
+    width: 24px;
+  }
+
+  &__day-list {
+    color: $primary;
+    display: none;
+    left: 0;
+    list-style-type: none;
+    position: absolute;
+    top: 48px;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &__day-list.visible{
+    display: block;
+  }
+
+  &__day-item.button--secondary {
+    background-color: $negative;
+    margin-top: 2px;
+  }
+
+}
+
+@media all and (min-width: $width-tablet) {
+  .line-up {
+    &__wrapper {
+      padding: $spacer-xxl 0;
+    }
+
+    &__title,
+    &__lead {
+      padding: 0 $spacer-xxxl;
+    }
+
+    &__programm {
+      padding: $spacer-xl $spacer-xxxl 0 40px;
+    }
+
+    &__day-choice > li {
+      background-color: transparent;
+      border: 0;
+      display: block;
+      margin-top: -48px;
+    }
+
+    &__day-choice > li p,
+    &__day-choice > li span {
+      display: none;
+    }
+
+    &__day-list {
+      display: block;
+      padding: 0 $spacer-xxxl;
+
+    }
+
+    &__day-item.button--secondary,
+    &__day-item.button--primary {
+      margin: 0 $spacer-xxs;
+    }
+
+    &__day-item.button--secondary {
+      background-color: transparent;
+    }
+
+    &__day-item:first-child {
+      margin-left: 0;
+      margin-right: $spacer-xxs;
+    }
+  }
+}
+
+@media all and (min-width: $width-desktop) {
+  .line-up {
+    &__title,
+    &__lead {
+      padding-left: 15%;
+      padding-right: 30%;
+    }
+
+    &__day-list {
+      padding-left: 15%;
+    }
+
+    &__programm {
+      padding: $spacer-xl 30% $spacer-xl calc(15% - 76px);
+    }
+  }
+}

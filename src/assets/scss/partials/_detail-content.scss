@@ -1,0 +1,115 @@
+/**
+Für Detail-Content
+ */
+.detail-content {
+  &__wrapper {
+    grid-area: detail-content;
+    margin-top: $spacer-xxl;
+  }
+
+  &__wrapper .page__title {
+    padding: 0 $spacer-s;
+    text-align: left;
+  }
+
+  &__times {
+    line-height: 40px;
+    margin: $spacer-xl $spacer-s;
+  }
+
+  &__date,
+  &__location {
+    display: grid;
+    grid-column-gap: $spacer-s;
+    grid-template-columns: 24px auto;
+    justify-content: start;
+  }
+
+  &__location::before {
+    content: $i-place;
+  }
+
+  &__date::before {
+    content: $i-calender;
+  }
+
+  &__lead {
+    margin: 0 $spacer-s;
+  }
+
+  &__text {
+    margin: 0 $spacer-s;
+  }
+
+  &__text p {
+    margin-top: $spacer-m;
+  }
+}
+
+@media all and (min-width: $width-tablet) {
+  .detail-content {
+    &__wrapper .page__title {
+      padding: 0 $spacer-xxxl;
+    }
+
+    &__lead {
+      margin: 0 $spacer-xxxl;
+      margin-bottom: $spacer-xxl;
+    }
+
+    &__times {
+      display: grid;
+      grid-column-gap: $spacer-xl;
+      grid-template-columns: repeat(2, auto);
+      justify-content: start;
+      margin: $spacer-xl $spacer-xxxl;
+    }
+
+    &__text {
+      margin: 0 $spacer-xxxl;
+    }
+
+    &__aside {
+      margin: 0 $spacer-xxxl;
+    }
+  }
+}
+
+@media all and (min-width: $width-desktop) {
+  .detail-content {
+    &__wrapper {
+      display: grid;
+      grid-column-gap: $spacer-xxl;
+      grid-template-areas: 'detail-title .' 'detail-times .' 'detail-lead detail-aside' 'detail-text detail-aside';
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(5, auto);
+      justify-content: space-between;
+      padding: 0 15%;
+    }
+
+    &__wrapper .page__title {
+      grid-area: detail-title;
+      padding: 0;
+    }
+
+    &__times {
+      grid-area: detail-times;
+      margin: $spacer-xl 0;
+    }
+
+    &__lead {
+      grid-area: detail-lead;
+      margin: 0;
+      margin-bottom: $spacer-l;
+    }
+
+    &__text {
+      grid-area: detail-text;
+      margin: 0;
+    }
+
+    &__aside {
+      margin: 0;
+    }
+  }
+}

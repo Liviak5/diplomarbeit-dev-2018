@@ -1,0 +1,175 @@
+/**
+ Für Payment-Box
+ */
+.payments {
+  &__box {
+    background-color: $negative;
+    color: $primary;
+    height: 425px;
+    padding: $spacer-l $spacer-s 0;
+    width: 310px;
+  }
+
+  &__input {
+    background-color: $primary--5;
+    border: 0;
+    height: 52px;
+    margin-bottom: $spacer-s;
+    width: 100%;
+  }
+
+  &__input input {
+    padding-top: 8px;
+  }
+
+  &__input input::placeholder {
+    color: $primary--3;
+    padding-top: 0;
+  }
+
+  &__input input,
+  &__input label,
+  &__input select {
+    background-color: transparent;
+    border: 0;
+    height: 52px;
+    padding: 0 $spacer-s;
+    width: 100%;
+    z-index: 300;
+  }
+
+  &__label {
+    color: $primary--3;
+    display: none;
+    margin-top: -2px;
+    position: absolute;
+  }
+
+  &__label.visible {
+    display: block;
+  }
+
+  &__cvc {
+    border-left: 1px solid $primary--3;
+  }
+
+  &__cvc-info img {
+    width: 24px;
+  }
+
+  &__cvc,
+  &__validity {
+    float: left;
+    width: 50%;
+  }
+
+  &__cvc,
+  &__card-number {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+
+  &__cvc-info,
+  &__card-icon {
+    padding-right: $spacer-s;
+    padding-top: $spacer-xxs;
+  }
+
+  &__card-icon img {
+    height: 18px;
+  }
+
+  &__card-holder {
+    clear: both;
+    display: block;
+  }
+
+  &__dropdown {
+    align-items: center;
+    display: none;
+    grid-template-columns: calc(100% - 16px) 16px;
+    justify-content: space-between;
+    padding: 0 $spacer-s;
+  }
+
+  &__select {
+    list-style-type: none;
+    width: 100%;
+  }
+
+  &__select .credit-icon {
+    display: block;
+    height: 32px;
+  }
+
+  &__choice {
+    align-content: start;
+    display: none;
+    grid-template-rows: repeat(3, 48px);
+    justify-content: stretch;
+    list-style-type: none;
+    margin-top: 52px;
+    position: absolute;
+    width: 278px;
+    z-index: 500;
+  }
+
+  &__choice li {
+    background-color: $primary--5;
+    border-top: 1px solid $primary--3;
+    height: 48px;
+    padding-top: $spacer-xxs;
+    text-align: center;
+    z-index: 300;
+  }
+
+  &__choice li img {
+    height: 32px;
+  }
+
+  &__choice.visible,
+  &__dropdown.visible,
+  &__select--after.visible {
+    display: grid;
+  }
+
+  &__select--after {
+    display: none;
+    grid-column-gap: $spacer-xxs;
+    grid-template-columns: repeat(3, 1fr);
+    height: 52px;
+    margin-bottom: $spacer-s;
+  }
+
+  &__icon-box {
+    align-content: center;
+    background-color: $primary--5;
+    border-radius: 5px;
+    display: grid;
+    padding: 0 $spacer-xs;
+  }
+
+  &__icon-box.selected {
+    border: 1px solid $primary;
+  }
+
+  &__submit {
+    margin-top: $spacer-m;
+  }
+
+  &__submit.indie.ok {
+    background-color: $c-indie;
+    border: 0;
+  }
+
+  &__submit-icon {
+    display: inline-block;
+    padding-right: 4px;
+    width: 17px;
+  }
+
+  &__submit-icon::after {
+    content: $i-security;
+  }
+}

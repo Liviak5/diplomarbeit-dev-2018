@@ -1,0 +1,103 @@
+/*
+Für Ticket-Validate-Display
+ */
+
+.ticket-validate {
+  &__wrapper {
+    color: $primary--3;
+    margin-bottom: $spacer-s;
+    width: 85%;
+  }
+
+  // music styles
+
+  // hiphop
+  &__wrapper.hiphop {
+    color: $c-hiphop;
+  }
+
+  &__wrapper.hiphop .validate__box--colored {
+    background-color: $c-hiphop;
+  }
+
+  // jazz
+  &__wrapper.jazz {
+    color: $c-jazz;
+  }
+
+  &__wrapper.jazz .validate__box--colored {
+    background-color: $c-jazz;
+  }
+
+  // indie
+  &__wrapper.indie {
+    color: $c-indie;
+  }
+
+  &__wrapper.indie .validate__box--colored {
+    background-color: $c-indie;
+  }
+  // pop-rock
+  &__wrapper.poprock {
+    color: $c-pop-rock;
+  }
+
+  &__wrapper.poprock .validate__box--colored {
+    background-color: $c-pop-rock;
+  }
+  // electronic
+  &__wrapper.electronic {
+    color: $c-electronic;
+  }
+
+  &__wrapper.electronic .validate__box--colored {
+    background-color: $c-electronic;
+  }
+  // end music styles
+
+  &__text {
+    display: grid;
+    grid-column-gap: $spacer-xxs;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+  }
+
+  &__sold,
+  &__spacer,
+  &__total {
+    float: left;
+  }
+
+  &__spacer,
+  &__total {
+    color: $primary--3;
+  }
+
+  &__boxes {
+    display: grid;
+    grid-column-gap: $spacer-xxs;
+    grid-template-columns: repeat(10, auto);
+    justify-content: space-between;
+    margin-top: $spacer-xxs;
+  }
+}
+
+.validate__box {
+  &--colored,
+  &--grey {
+    height: 16px;
+    width: 16px;
+  }
+
+  &--grey {
+    background-color: $primary--3;
+  }
+}
+
+@media all and (min-width: $width-desktop) {
+  .ticket-validate {
+    &__wrapper {
+      height: calc (104px - (2 * $spacer-m));
+    }
+  }
+}

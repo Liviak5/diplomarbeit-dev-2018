@@ -1,0 +1,19 @@
+<!--ticket-overview start-->
+<div class="ticket__post-wrapper {{this.style}}">
+    <div class="ticket__post-img">
+        <img src="/assets/media/festivals/{{this.img}}" alt="{{this.title}} Teaser-Bild">
+    </div>
+    <div class="ticket__post-icon">
+        <img src="/assets/media/icons/{{this.icon}}" alt="{{this.style}} icon">
+    </div>
+    <div class="ticket__post-validity">
+        {{#with this.tickets.[0]}}
+        {{>ticket-validate-display}}
+        {{/with}}
+    </div>
+    <h2 class="ticket__post-title post__title"><a href="/content/detail.html">{{this.title}}</a></h2>
+    <span class="ticket__post-buy">
+        <a href="../content/ticket_buy.html" class="button--primary button__text">kaufen</a>
+    </span>
+</div>
+<!--ticket-overview end-->

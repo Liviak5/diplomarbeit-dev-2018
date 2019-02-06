@@ -1,0 +1,115 @@
+.content__wrapper.detail {
+  grid-template-areas: 'detail-teaser' 'liveinfo' 'bc' 'detail-content' 'slider' 'line-up' 'video-player' 'w-know' 'ad-festival' 'switch-button';
+  margin-top: 64px;
+
+  .bc__list {
+    margin-top: 6px;
+  }
+}
+
+.detail-header {
+  &__wrapper {
+    display: grid;
+    grid-area: detail-teaser;
+    grid-template-columns: 1fr 64px 1fr;
+    grid-template-rows: repeat(2, auto) 34px auto;
+  }
+
+  &__img {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 3;
+    height: 337px;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  &__img img {
+    width: 100%;
+  }
+
+  &__icon {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    padding-top: $spacer-l;
+    z-index: 10;
+  }
+
+  &__icon img {
+    width: 64px;
+  }
+
+  &__box--colored {
+    background-color: $c-indie;
+    grid-column: 1 / span 3;
+    grid-row: 4 / span 1;
+  }
+}
+
+.festival__title {
+  grid-column: 1 / span 3;
+  grid-row: 3 / span 2;
+  margin-bottom: 104px;
+  padding: 0 $spacer-s;
+  z-index: 10;
+}
+
+@media all and (min-width: $width-tablet) {
+  .content__wrapper.detail {
+    margin-top: 0;
+  }
+
+  .detail-header {
+    &__wrapper {
+      grid-template-columns: 1fr 112px 1fr;
+      grid-template-rows: repeat(2, auto) 60px auto;
+    }
+
+    &__img {
+      height: 648px;
+    }
+
+    &__img img {
+      margin-top: -10%;
+    }
+
+    &__icon {
+      padding-top: $spacer-xl;
+    }
+
+    &__icon img {
+      width: 112px;
+    }
+  }
+
+  .festival__title {
+    padding: 0 $spacer-m;
+  }
+
+}
+
+@media all and (min-width: $width-desktop) {
+  // Empfehlung: Überdenken des Layouts, man sollte den Titel der Seite auf den ersten Blick einer Seite sehen
+  .detail-header {
+    &__wrapper {
+      grid-template-columns: 1fr 210px 1fr;
+      grid-template-rows: repeat(2, auto) 90px auto;
+    }
+
+    &__img {
+      // TODO: müsste eigentlich 1289px hoch sein, aber es ist so schon riesig
+      height: 1100px;
+    }
+
+    &__icon {
+      padding-top: $spacer-xxl;
+    }
+
+    &__icon img {
+      width: 210px;
+    }
+  }
+
+  .festival__title {
+    padding: 0 $spacer-m;
+  }
+}

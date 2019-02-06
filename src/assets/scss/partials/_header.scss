@@ -1,0 +1,309 @@
+/* Header */
+
+.header {
+  &__wrapper {
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 1px solid $primary--4;
+    border-top: 1px solid $primary--4;
+    display: grid;
+    grid-area: header;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
+  }
+
+  &__wrapper.dark {
+    background-color: $primary;
+    color: $negative;
+    opacity: 0.85;
+
+    .header__nav-icon::after {
+      content: $i-close;
+    }
+
+    .header__nav:hover .header__nav-icon,
+    .header__nav:focus .header__nav-icon {
+      content: $i-close--c2;
+    }
+
+    .header__nav .header__text::after {
+      content: 'SCHLIESSEN';
+    }
+  }
+
+  &__menu--left {
+    align-content: center;
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  &__menu--right {
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-items: end;
+  }
+}
+
+// Button Navigation
+.header__nav {
+  cursor: pointer;
+  padding: 0 $spacer-l;
+
+  .header__text::after {
+    content: 'MENU';
+  }
+
+  &-icon {
+    display: inline-block;
+    padding-right: $spacer-xs;
+    width: 32px;
+  }
+
+  &-icon::after {
+    content: $i-menu;
+  }
+
+  &:hover,
+  &:focus {
+    color: $primary--3;
+  }
+
+  &:hover .header__nav-icon,
+  &:focus .header__nav-icon {
+    content: $i-menu--c2;
+  }
+}
+
+// Logo
+.header__logo {
+  text-align: center;
+
+  &-img--large {
+    display: none;
+    height: 32px;
+  }
+
+  &-img--small {
+    display: inline;
+    height: 28px;
+  }
+}
+
+// Button Login
+.header__login {
+  border-left: 1px solid $primary--4;
+  color: $primary--3;
+  cursor: pointer;
+  height: 64px;
+  line-height: 60px;
+  min-width: 64px;
+  text-align: center;
+
+  &.visible,
+  &:hover,
+  &:focus {
+    background-color: $primary--3;
+    color: $primary;
+  }
+
+  &.visible .header__login-icon::after,
+  &:hover .header__login-icon::after,
+  &:focus .header__login-icon::after {
+    content: $i-login;
+  }
+
+  &-icon {
+    display: inline-block;
+    padding-top: 6px;
+    width: 28px;
+  }
+
+  &-icon::after {
+    content: $i-login--c2;
+  }
+
+  .header__text {
+    display: none;
+  }
+
+  //Login Box
+  &-box {
+    background-color: $primary;
+    color: $negative;
+    display: block;
+    height: 425px;
+    padding: $spacer-l $spacer-m;
+    position: absolute;
+    right: $spacer-l;
+    top: 115%;
+    width: 310px;
+    z-index: 1;
+  }
+
+  &-box.hide {
+    display: none;
+  }
+
+  //Hilfe für Loginbox von https://www.w3schools.com/css/css_tooltip.asp
+  &-box::after {
+    border-bottom: 10px solid $primary;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    bottom: 100%;
+    content: '';
+    display: block;
+    height: 0;
+    margin-left: 68%;
+    position: absolute;
+    width: 0;
+  }
+
+  &-form {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto);
+    justify-items: center;
+    width: 100%;
+  }
+
+  &-input {
+    border: 0;
+    color: $primary;
+    font-size: 13px;
+    margin-bottom: $spacer-s;
+    padding: $spacer-xs;
+    width: 100%;
+  }
+
+  &-input::placeholder {
+    color: $primary--3;
+  }
+
+  &-button {
+    background-color: $negative;
+    border: 0;
+    cursor: pointer;
+    margin: $spacer-xxs 0;
+    padding: $spacer-xs;
+    width: 50%;
+  }
+
+  &-info {
+    color: $negative;
+  }
+
+  &-info a {
+    color: $negative;
+    font-weight: bold;
+  }
+
+  &-register {
+    align-content: center;
+    border-top: 1px solid $negative;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: auto;
+    height: 128px;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+}
+
+// Button Buy
+.header__buy {
+  border-left: 1px solid $primary--4;
+  cursor: pointer;
+  display: inline;
+  height: 64px;
+  line-height: 64px;
+  min-width: 64px;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    background-color: $primary--3;
+    color: $primary;
+  }
+
+  &:hover .header__buy-icon::after,
+  &:focus .header__buy-icon::after {
+    content: $i-buy;
+  }
+
+  &:hover .header__text,
+  &:focus .header__text {
+    color: $primary;
+  }
+
+  &-icon {
+    display: inline-block;
+    padding-top: 3px;
+    width: 32px;
+  }
+
+  &-icon::after {
+    content: $i-buy--c2;
+  }
+
+  .header__text {
+    color: $primary--3;
+    display: none;
+    text-decoration: none;
+  }
+}
+
+@media all and (min-width: 376px) {
+  .header__logo {
+    &-img--large {
+      display: inline;
+    }
+
+    &-img--small {
+      display: none;
+    }
+  }
+}
+
+@media all and (min-width: 769px) {
+  .header__login {
+    padding: 0 $spacer-l;
+
+    &-icon {
+      padding-right: $spacer-xs;
+      width: 36px;
+    }
+
+    .header__text {
+      display: inline;
+    }
+
+    &-box {
+      margin-right: 180px;
+      right: 0;
+    }
+
+    &-box::after {
+      margin-left: 40%;
+    }
+  }
+
+  .header__buy {
+    padding: 0 $spacer-l;
+
+    &-icon {
+      padding-right: $spacer-xs;
+      width: 36px;
+    }
+
+    .header__text {
+      display: inline;
+    }
+  }
+}

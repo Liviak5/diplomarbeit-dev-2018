@@ -1,0 +1,13 @@
+<!--Magazin start-->
+<section id="magazin" class="magazin__wrapper">
+    <h2 class="magazin__title page__title">Magazin</h2>
+    <div class="magazin__posts">
+        {{#each api.magazin-posts}}
+        {{>magazin-post}}
+        {{/each}}
+    </div>
+    <div class="magazin__button">
+        <button id="magazin-more" class="button--secondary button__text">mehr anzeigen</button>
+    </div>
+</section>
+<!--Magazin end-->

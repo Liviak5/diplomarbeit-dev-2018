@@ -1,0 +1,24 @@
+<!--festival-post start-->
+<div class="festival__post-wrapper {{this.style}}">
+    <a href="/content/detail.html" class="festival__post-img">
+        <img src="/assets/media/festivals/{{this.img}}" alt="{{this.title}} Teaser-Bild">
+    </a>
+    <div class="festival__post-icon">
+        <img src="/assets/media/icons/{{this.icon}}" alt="{{this.style}} icon">
+    </div>
+    <div class="festival__post-times">
+        <div class="festival__post-location"><p class="addinfo">{{this.location}}</p></div>
+        <span class="festival__post-spacer addinfo">/</span>
+        <div class="festival__post-date"><p class="addinfo">{{this.date}}</p></div>
+    </div>
+    <h2 class="festival__post-title post__title">
+        <a href="/content/detail.html">{{this.title}}</a>
+    </h2>
+    <div class="festival__post-text">
+        <a href="/content/detail.html">{{this.text}}</a>
+    </div>
+    <div class="festival__post-remember {{#if this.selected}} selected {{/if}}">
+        <p class="button__text">merken</p>
+    </div>
+</div>
+<!--festival-post end-->

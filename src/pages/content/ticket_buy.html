@@ -1,0 +1,38 @@
+<div class="ticket__festival-logo indie">
+    <img src="../assets/media/icons/music_indie.svg" alt="Indie Logo">
+</div>
+<h1 class="ticket-buy__title page__title">Tickets für Sur Le Lac</h1>
+<div class="lead__wrapper">
+    <p class="lead__text">Liebe FestivalLovers unsere Festivals sind begehrt, daher sind auch unsere Tickets immer
+        schnell ausverkauft.
+        Sichert euch die besten Angebote – verpasst eure Chance nicht!</p>
+</div>
+<div class="ticket-buy__wrapper">
+    <div class="ticket-buy__times">
+        <div class="ticket-buy__location"><p>Eggersriet SG</p></div>
+        <div class="ticket-buy__date"><p>Fr. 13. – So. 15. Aug 2016</p></div>
+    </div>
+    <div class="ticket-buy__entrance">
+    <h2 class="post__title">Festivaleintritt</h2>
+        {{#with api.festivals.[2]}}
+            {{#each this.tickets}}
+                {{#ifequal this.category 'entrance'}}
+                    {{>buy-article}}
+                {{/ifequal}}
+            {{/each}}
+        {{/with}}
+    </div>
+    <div class="ticket-buy__camping">
+        <h2 class="post__title">Camping</h2>
+        {{#with api.festivals.[2]}}
+            {{#each this.tickets}}
+                {{#ifequal this.category 'camping'}}
+                    {{>buy-article}}
+                {{/ifequal}}
+            {{/each}}
+        {{/with}}
+    </div>
+    <div class="ticket-buy__basket">
+        <a href="login-page.html" class="button--primary button__text"> <span id="basket-number-total">0</span> Tickets kaufen</a>
+    </div>
+</div>

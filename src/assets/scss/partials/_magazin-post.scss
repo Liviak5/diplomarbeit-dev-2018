@@ -1,0 +1,36 @@
+/**
+Magazin-Post
+ */
+
+.magazin__post {
+  &-wrapper {
+    padding-top: $spacer-l;
+  }
+
+  &-text {
+    display: none;
+  }
+
+  &-lesen {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid $primary;
+    display: inline-block;
+  }
+}
+
+@media all and (min-width: 376px) {
+  .magazin__post {
+    &-wrapper {
+      padding-top: 0;
+    }
+
+    &-text {
+      display: inline-block;
+    }
+
+    &-lesen {
+      display: none;
+    }
+  }
+}

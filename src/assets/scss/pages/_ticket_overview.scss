@@ -1,0 +1,62 @@
+.content__wrapper.ticket_overview {
+  grid-row-gap: $spacer-xl;
+  grid-template-areas: 'bc ' 'title' 'lead' 'festivals';
+}
+
+.ticketoverview {
+  &__wrapper {
+    background-color: $primary--5;
+    padding: $spacer-s;
+    width: 100vw;
+  }
+
+  &__button {
+    margin: $spacer-xl 0;
+    text-align: center;
+  }
+
+  &__wrapper > .post__title {
+    margin-bottom: $spacer-xl;
+    margin-top: 72px;
+    text-align: center;
+  }
+}
+
+@media all and (min-width: $width-tablet) {
+  .ticketoverview {
+    &__wrapper {
+      padding: $spacer-s $spacer-m;
+    }
+
+    &__posts {
+      &--remember,
+      &--alle {
+        display: grid;
+        grid-column-gap: $spacer-m;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
+}
+
+@media all and (min-width: $width-desktop) {
+  .ticketoverview {
+    &__wrapper {
+      padding: $spacer-s $spacer-xxxl;
+    }
+
+    &__wrapper > .post__title {
+      margin-top: $spacer-xxxl;
+      text-align: left;
+    }
+
+    &__posts {
+      &--remember,
+      &--alle {
+        display: block;
+      }
+    }
+
+  }
+}

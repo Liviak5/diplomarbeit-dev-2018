@@ -1,0 +1,134 @@
+/**
+Filter-Buttons
+ */
+
+.filter__genre-button {
+  background-color: $primary--3;
+  border: 0;
+  border-radius: 10px;
+  color: $negative;
+  cursor: pointer;
+  height: 48px;
+  margin: 0 $spacer-m $spacer-m;
+  min-width: 100px;
+  padding: $spacer-xs $spacer-s $spacer-xs $spacer-xs;
+
+  &.alternative:hover,
+  &.alternative.selected {
+    background-color: $c-indie;
+  }
+
+  &.country:hover,
+  &.country.selected {
+    background-color: $c-indie;
+  }
+
+  &.electronic:hover,
+  &.electronic.selected {
+    background-color: $c-electronic;
+  }
+
+  &.hiphop:hover,
+  &.hiphop.selected {
+    background-color: $c-hiphop;
+  }
+
+  &.indie:hover,
+  &.indie.selected {
+    background-color: $c-indie;
+  }
+
+  &.jazz:hover,
+  &.jazz.selected {
+    background-color: $c-jazz;
+  }
+
+  &.metal:hover,
+  &.metal.selected {
+    background-color: $c-pop-rock;
+  }
+
+  &.poprock:hover,
+  &.poprock.selected {
+    background-color: $c-pop-rock;
+  }
+
+  &.rnb:hover,
+  &.rnb.selected {
+    background-color: $c-jazz;
+  }
+
+  &.soul:hover,
+  &.soul.selected {
+    background-color: $c-jazz;
+  }
+}
+
+.filter__button {
+  &-icon {
+    float: left;
+    width: 24px;
+  }
+
+  /**
+  Music-icon-contents
+   */
+  &-icon.alternative::after {
+    content: $i-alternative;
+  }
+
+  &-icon.country::after {
+    content: $i-country;
+  }
+
+  &-icon.electronic::after {
+    content: $i-electronic;
+  }
+
+  &-icon.hiphop::after {
+    content: $i-hiphop;
+  }
+
+  &-icon.indie::after {
+    content: $i-indie;
+  }
+
+  &-icon.jazz::after {
+    content: $i-jazz;
+  }
+
+  &-icon.metal::after {
+    content: $i-metal;
+  }
+
+  &-icon.poprock::after {
+    content: $i-pop-rock;
+  }
+
+  &-icon.rnb::after {
+    content: $i-rnb;
+  }
+
+  &-icon.soul::after {
+    content: $i-soul;
+  }
+
+  &-text {
+    float: left;
+    margin-left: $spacer-m;
+    top: 0;
+  }
+
+  &-counter {
+    float: left;
+    font-size: 13px;
+    margin-left: $spacer-xxs;
+    margin-top: -$spacer-xxs/2;
+  }
+}
+
+@media all and (min-width: $width-tablet) {
+  .filter__genre-button {
+    margin: $spacer-xs;
+  }
+}

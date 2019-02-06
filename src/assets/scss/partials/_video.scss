@@ -1,0 +1,45 @@
+.video {
+  &__wrapper {
+    grid-area: video-player;
+    height: auto;
+    overflow: hidden;
+  }
+
+  //https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
+  &__item {
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 */
+    position: relative;
+  }
+
+  &__item iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+@media all and (min-width: $width-desktop) {
+  .video {
+    &__wrapper {
+      grid-area: video-player;
+      height: 392px;
+      overflow: hidden;
+    }
+
+    &__item {
+      margin-top: -11%;
+    }
+
+    // TODO im Playmode erweitern
+    &__wrapper.playmode {
+      height: 784px;
+    }
+
+    &__wrapper.playmode > .video__item {
+      margin-top: 0;
+    }
+  }
+}

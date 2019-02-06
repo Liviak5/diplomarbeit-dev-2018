@@ -1,0 +1,59 @@
+/**
+Für Payments-Layout
+ */
+.payments {
+  &__wrapper {
+    align-content: space-between;
+    display: grid;
+    grid-row-gap: $spacer-xs;
+    grid-template-areas: 'payment-title' 'payment-content' 'payment-icon';
+    grid-template-columns: 100%;
+    grid-template-rows: 48px calc(100vh - 236px) 52px;
+    justify-items: center;
+    margin-top: 64px;
+    padding: $spacer-m 0;
+    width: 100vw;
+  }
+
+  &__wrapper > .page__title {
+    align-self: end;
+    color: $negative;
+    grid-area: payment-title;
+  }
+
+  &__wrapper.indie {
+    background-color: $c-indie;
+  }
+
+  &__content {
+    grid-area: payment-content;
+  }
+
+  &__icon {
+    grid-area: payment-icon;
+  }
+
+  &__icon img {
+    width: 52px;
+  }
+}
+
+@media all and (min-width: $width-tablet) {
+  .payments {
+    &__wrapper {
+      grid-row-gap: 66px;
+      grid-template-rows: 126px calc(100vh - 422px) 52px;
+      margin-top: 0;
+    }
+  }
+}
+
+@media all and (min-width: $width-desktop){
+  .payments {
+    &__wrapper {
+      grid-row-gap: 24px;
+      grid-template-rows: 114px calc(100vh - 326px) 52px;
+      margin-top: 0;
+    }
+  }
+}

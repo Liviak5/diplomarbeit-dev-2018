@@ -1,0 +1,180 @@
+/**
+Add for Fesivalapp
+ */
+.ad__app-wrapper {
+  display: grid;
+  grid-area: ad-app;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 2fr 3fr;
+}
+
+.app {
+  &__content {
+    align-content: center;
+    background-color: $primary;
+    display: grid;
+    grid-column: 1 / 5;   //erst Start dann über wie viele Zeilen resp. wo aufhören
+    grid-column-gap: $spacer-xs;
+    grid-row: 2 / span 2;
+    grid-row-gap: $spacer-l;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: start;
+  }
+
+  &__content-img {
+    grid-column: 2 / span 2;
+    grid-row: 1 / 3;
+    padding-bottom: $spacer-l;
+    text-align: center;
+    z-index: 3;         // hebt img über die schwarze Fläche
+  }
+
+  &__content-img img {
+    width: 60%;
+  }
+
+  &__content-text {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 1;
+  }
+
+  &__content-text .page__title {
+    color: $negative;
+    text-align: center;
+  }
+
+  &__content-buttons {
+    display: grid;
+    grid-column: 1 / span 4;
+    grid-row-gap: $spacer-xxs;
+    grid-row-start: 3;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+    text-align: center;
+
+  }
+
+  &__content-logo {
+    display: grid;
+    grid-column: 1 / span 4;
+    grid-column-gap: $spacer-xs;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
+    justify-content: space-between;
+
+  }
+
+  &__content-buttons > .button--secondary {
+    border-color: $negative;
+    color: $negative;
+    grid-column: 1 / span 4;
+    grid-row: 1 / 2;
+  }
+}
+
+@media all and (min-width: $width-tablet) {
+  .ad__app-wrapper {
+    grid-column-gap: $spacer-m;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 4fr;
+  }
+
+  .app {
+    &__content {
+      grid-column: 1/ span 2;
+      grid-column-gap: $spacer-m;
+      grid-row: 2 / span 1;
+      grid-row-gap: $spacer-m;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(2, auto);
+      padding: $spacer-l 0;
+    }
+
+    &__content-text {
+      grid-column: 4 / span 4;
+    }
+
+    &__content-text .page__title {
+      text-align: left;
+    }
+
+    &__content-img {
+      align-self: center;
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+      padding-bottom: 0;
+      padding-left: $spacer-xl;
+    }
+
+    &__content-img img {
+      width: auto;
+    }
+
+    &__content-buttons {
+      grid-column: 4 / span 4;
+      grid-row-gap: $spacer-m;
+      justify-items: left;
+    }
+
+    &__content-logo {
+      grid-column-gap: $spacer-l;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+    }
+  }
+}
+
+@media all and (min-width: $width-desktop) {
+  .ad__app-wrapper {
+    grid-column-gap: $spacer-xl;
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: 1fr 4fr;
+  }
+
+  .app {
+    &__content {
+      grid-column-gap: $spacer-s;
+      grid-row-gap: $spacer-m;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(2, auto);
+    }
+
+    &__content-img {
+      grid-column-end: 2;
+      grid-column-start: 1;
+      grid-row-end: 3;
+      grid-row-start: 1;
+      padding-bottom: $spacer-l;
+      padding-left: 120px;
+      z-index: 3;
+    }
+
+    &__content-text {
+      grid-column: 5/ span 7;
+    }
+
+    &__content-buttons {
+      align-items: center;
+      grid-column: 5/ span 7;
+      grid-column-gap: $spacer-l;
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: 1fr;
+      justify-content: start;
+    }
+
+    &__content-logo {
+      grid-column-start: 3;
+      grid-template-columns: repeat(2, auto);
+    }
+
+    &__content-logo img {
+      width: 100%;
+    }
+
+    &__content-buttons > .button--secondary {
+      grid-column: 1 / span 2;
+    }
+  }
+}

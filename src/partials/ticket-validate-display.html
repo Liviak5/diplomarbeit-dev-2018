@@ -1,0 +1,21 @@
+<!--tickets info start-->
+<div class="ticket-validate__wrapper {{#ifequal this.boxesGrey 10}}{{else}}{{this.style}}{{/ifequal}}">
+    <div class="ticket-validate__text">
+        <p>Verfügbare Tickets</p>
+        <div class="ticket-validate__ticket-numbers">
+            <p class="ticket-validate__sold">{{this.available}}</p>
+            <span class="ticket-validate__spacer">/</span>
+            <p class="ticket-validate__total">{{this.totalNumber}}</p>
+        </div>
+    </div>
+    <div class="ticket-validate__boxes">
+        {{#repeat this.boxesColored }}
+        <div class="validate__box--colored"></div>
+        {{/repeat}}
+        {{#repeat this.boxesGrey }}
+        <div class="validate__box--grey"></div>
+        {{/repeat}}
+    </div>
+
+</div>
+<!--tickets info end-->

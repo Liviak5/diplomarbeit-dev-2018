@@ -1,0 +1,15 @@
+<!--Filter start-->
+<div class="filter__wrapper">
+    <button id="filter-show" class="filter__button-show button--primary button__text">Filter anzeigen</button>
+    <div class="filter__genres">
+        {{#each api.filters}}
+        {{>filter-genre-button}}
+        {{/each}}
+        <div id="filter-more" class="filter__more button__text"><a href="#">mehr Genres</a></div>
+    </div>
+    <div class="filter__button-method">
+        <button class="button--secondary button__text">Filter zurücksetzen</button>
+        <button class="button--primary button__text">Ergebnis anzeigen</button>
+    </div>
+</div>
+<!--Filter end-->

@@ -1,0 +1,56 @@
+.content__wrapper.festival_overview {
+  grid-row-gap: $spacer-xl;
+  grid-template-areas: 'bc ' 'title' 'lead' 'filter' 'festivals';
+}
+
+.festivals {
+  &__wrapper {
+    background-color: $primary--5;
+    grid-area: festivals;
+    padding: $spacer-s;
+    width: 100vw;
+  }
+
+  &__button {
+    margin: $spacer-xl 0;
+    text-align: center;
+  }
+}
+
+@media all and (min-width: $width-tablet) {
+  .festivals {
+    &__wrapper {
+      padding: $spacer-s $spacer-m;
+    }
+  }
+
+  .festivals__wrapper.list > .festivals__posts {
+    display: block;
+  }
+
+  .festivals__wrapper.kacheln > .festivals {
+    &__posts {
+      display: grid;
+      grid-column-gap: $spacer-m;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+    }
+  }
+}
+
+@media all and (min-width: $width-desktop) {
+  .festivals {
+    &__wrapper {
+      padding: $spacer-s $spacer-xxxl;
+    }
+  }
+
+  .festivals__wrapper.kacheln > .festivals {
+    &__posts {
+      display: grid;
+      grid-column-gap: $spacer-s;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+    }
+  }
+}

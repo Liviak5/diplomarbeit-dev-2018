@@ -1,0 +1,16 @@
+<div class="article__wrapper {{#ifequal this.boxesGrey 10}}{{else}}{{this.style}}{{/ifequal}}">
+    <div class="article__banner">
+        <img src="../assets/media/icons/{{this.image}}" alt="Standard-Ticket Icon">
+        <h3 class="page__title">{{this.name}}</h3>
+        <p class="sub__title">{{this.price}}</p>
+    </div>
+    <div class="article__availability">
+        {{>ticket-validate-display}}
+    </div>
+    <div class="article__counter">
+        <button class="counter__button button__minus">–</button>
+        <span class="counter__display">0</span>
+        <p class="counter__article-units">Tickets</p>
+        <button class="counter__button button__plus">+</button>
+    </div>
+</div>

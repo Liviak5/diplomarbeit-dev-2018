@@ -1,0 +1,44 @@
+<div class="payments__box">
+    <!--TODO hier müssen noch Action und Method eingefügt werden-->
+    <form class="payments__form">
+        <div class="payments__input payments__dropdown visible">
+            <div id="payment-type-dropdown" class="payments__select" name="payment-type">
+                <img class="credit-icon" src="../assets/media/icons/payment_visa.svg" alt="Visa Icon">
+            </div>
+            <div><img id="payments-dropdown-icon" src="../assets/media/icons/steuerung_dropdown.svg" alt="dropdown"></div>
+            <ul id="dropdown-choice" class="payments__choice">
+                <li class="dropdown__item visa"><img class="credit-icon" src="../assets/media/icons/payment_visa.svg" alt="Visa"></li>
+                <li class="dropdown__item mastercard"><img class="credit-icon" src="../assets/media/icons/payment_mastercard.svg" alt="MasterCard"></li>
+                <li class="dropdown__item paypal"><img class="credit-icon" src="../assets/media/icons/payment_paypal.svg" alt="PayPal"></li>
+            </ul>
+        </div>
+        <div id="payment-select-after" class="payments__select--after">
+            <div id="icon-box-visa" class="payments__icon-box visa selected"><img src="../assets/media/icons/payment_visa.svg" alt="Visa"></div>
+            <div id="icon-box-master"  class="payments__icon-box mastercard"><img src="../assets/media/icons/payment_mastercard.svg" alt="MasterCard"></div>
+            <div id="icon-box-paypal"  class="payments__icon-box paypal"><img src="../assets/media/icons/payment_paypal.svg" alt="PayPal"></div>
+        </div>
+        <div class="payments__input payments__card-number">
+            <label class="payments__label addinfo" for="card-number">1111-1111-1111-1111</label>
+            <input type="text" name="card-number" id="card-number" required pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+                   placeholder="1111-1111-1111-1111">
+            <div class="payments__card-icon"><img id="card-icon" src="../assets/media/icons/payment_visa.svg" alt="Visa Logo"></div>
+        </div>
+        <div class="payments__input payments__validity">
+            <label class="payments__label addinfo" for="card-validity">MM/JJ</label>
+            <input type="text" name="card-validity" id="card-validity" required pattern="[0-9]{2}/[0-9]{2}" placeholder="MM/JJ">
+        </div>
+        <div class="payments__input payments__cvc">
+            <label class="payments__label addinfo" for="card-cvc">CVC</label>
+            <input type="text" name="card-cvc" id="card-cvc" required pattern="[0-9]{3}" placeholder="CVC">
+            <div class="payments__cvc-info"><img src="../assets/media/icons/tickets_info.svg"
+                                                 alt="Information über CVC"></div>
+        </div>
+        <div class="payments__input payments__card-holder">
+            <label class="payments__label addinfo" for="card-holder">Karteninhaber</label>
+            <input type="text" name="card-holder" id="card-holder" required placeholder="Karteninhaber">
+        </div>
+        <button id="payment-submit" class="button--primary button__text payments__submit indie" type="submit"><span
+                class="payments__submit-icon"></span> CHF 895.– bezahlen
+        </button>
+    </form>
+</div>

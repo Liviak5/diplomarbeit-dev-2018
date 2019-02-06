@@ -1,0 +1,146 @@
+/**
+Für Ticket-Buy-Page
+ */
+.content__wrapper.ticket_buy {
+  grid-template-areas: 'festival-logo' 'bc ' 'title' 'lead';
+
+  .bc__list {
+    margin-top: 6px;
+  }
+
+  .ticket-buy__title {
+    margin-top: $spacer-xl;
+  }
+
+  .lead__text {
+    margin-top: $spacer-xl;
+  }
+}
+
+.ticket__festival-logo {
+  align-content: center;
+  display: grid;
+  grid-area: festival-logo;
+  height: 104px;
+  justify-content: center;
+  margin-top: 64px;
+  width: 100%;
+
+  &.indie {
+    background-color: $c-indie;
+  }
+
+  img {
+    width: 52px;
+  }
+}
+
+.ticket-buy {
+  &__wrapper {
+    background-color: $primary--5;
+    margin-top: $spacer-xxl;
+    padding: $spacer-s;
+    width: 100vw;
+  }
+
+  &__button {
+    margin: $spacer-xl 0;
+    text-align: center;
+  }
+
+  &__wrapper .post__title {
+    grid-area: ticket-title;
+    margin-bottom: $spacer-s;
+    margin-top: 72px;
+    text-align: center;
+  }
+
+  &__times {
+    margin-top: $spacer-m;
+  }
+
+  &__date,
+  &__location {
+    display: grid;
+    grid-column-gap: $spacer-s;
+    grid-template-columns: 24px auto;
+    justify-content: center;
+    margin-top: $spacer-s;
+  }
+
+  &__location::before {
+    content: $i-place;
+  }
+
+  &__date::before {
+    content: $i-calender;
+  }
+
+  &__entrance,
+  &__camping {
+    display: block;
+    width: 100%;
+  }
+
+  &__basket {
+    border-top: 4px solid $primary;
+    margin-top: $spacer-xl;
+    padding: $spacer-l 0;
+    text-align: center;
+  }
+
+}
+
+@media all and (min-width: $width-tablet) {
+  .ticket__festival-logo {
+    margin-top: 0;
+  }
+
+  .ticket-buy {
+    &__wrapper {
+      padding: $spacer-s $spacer-m;
+    }
+
+    &__times {
+      display: grid;
+      grid-column-gap: $spacer-xl;
+      grid-template-columns: repeat(2, auto);
+      justify-content: center;
+      margin-top: $spacer-m;
+    }
+
+    &__entrance,
+    &__camping {
+      display: grid;
+      grid-column-gap: $spacer-m;
+      grid-row-gap: $spacer-m;
+      grid-template-areas: 'ticket-title ticket-title';
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: auto;
+    }
+  }
+
+}
+
+@media all and (min-width: $width-desktop) {
+  .ticket-buy {
+    &__wrapper {
+      padding: $spacer-s $spacer-xxxl;
+    }
+
+    &__entrance > .post__title,
+    &__camping > .post__title {
+      margin-top: $spacer-xxxl;
+      text-align: left;
+    }
+
+    &__entrance,
+    &__camping {
+      grid-column-gap: $spacer-s;
+      grid-row-gap: $spacer-s;
+      grid-template-areas: 'ticket-title ticket-title ticket-title ticket-title';
+      grid-template-columns: repeat(4, 25%);
+      grid-template-rows: auto;
+    }
+  }
+}

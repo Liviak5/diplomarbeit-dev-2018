@@ -1,0 +1,28 @@
+<h1 class="page__title">Tickets</h1>
+<div class="lead__wrapper">
+    <p class="lead__text">Liebe FestivalLovers unsere Festivals sind begehrt, daher sind auch unsere Tickets immer
+        schnell ausverkauft.
+        Sichert euch die besten Angebote – verpasst eure Chance nicht!</p>
+</div>
+
+<!--Ticket start-->
+<div id="ticketoverview" class="ticketoverview__wrapper">
+    <h2 class="post__title">gemerkte Festivals</h2>
+    <div class="ticketoverview__posts--remember">
+        {{#each api.festivals}}
+        {{#if this.selected}}
+        {{>ticket-overview-post-sel}}
+        {{/if}}
+        {{/each}}
+    </div>
+    <h2 class="post__title">Alle Festivals</h2>
+    <div class="ticketoverview__posts--alle">
+        {{#each api.festivals}}
+        {{>ticket-overview-post}}
+        {{/each}}
+    </div>
+    <div class="ticketoverview__button">
+        <button id="ticketoverview-more" class="button--secondary button__text">mehr anzeigen</button>
+    </div>
+</div>
+<!--Ticket end-->

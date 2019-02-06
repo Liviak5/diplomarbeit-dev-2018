@@ -1,0 +1,54 @@
+/**
+Für Map
+ */
+.akkordeon {
+  &-item__map {
+    height: 232px;
+    margin-top: $spacer-xxl;
+    width: 100%;
+  }
+
+  &-item__title {
+    align-content: end;
+    align-items: end;
+    border-bottom: 4px solid $primary;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    margin-bottom: $spacer-xl;
+    padding-bottom: $spacer-s;
+  }
+
+  &-item__text {
+    margin-bottom: $spacer-xl;
+  }
+}
+
+@media all and (min-width: $width-tablet) {
+  .akkordeon {
+    &__wrapper {
+      padding: 0 $spacer-xxxl;
+    }
+
+    &-item__map {
+      height: 353px;
+    }
+  }
+}
+
+@media all and (min-width: $width-desktop) {
+  .akkordeon {
+    &__wrapper {
+      padding-left: 15%;
+      padding-right: 30%;
+    }
+
+    &-item__title {
+      padding-bottom: $spacer-m;
+    }
+
+    &-item__map {
+      height: 392px;
+    }
+  }
+}

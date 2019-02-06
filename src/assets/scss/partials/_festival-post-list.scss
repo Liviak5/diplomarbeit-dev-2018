@@ -1,0 +1,264 @@
+/*
+Festival-Post-list
+ */
+.festivals__wrapper.list .festival__post {
+  &-wrapper {
+    background-color: $negative;
+    display: grid;
+    grid-template-areas: 'icon icon' 'title title' 'times remember';
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    justify-content: space-between;
+    margin: $spacer-m 0;
+    padding-bottom: $spacer-m;
+  }
+
+  // music styles
+
+  // hiphop
+  &-wrapper.hiphop {
+    border-bottom: 4px solid $c-hiphop;
+  }
+
+  &-wrapper.hiphop .festival__post-icon {
+    background-color: $c-hiphop;
+  }
+
+  // jazz
+  &-wrapper.jazz {
+    border-bottom: 4px solid $c-jazz;
+  }
+
+  &-wrapper.jazz .festival__post-icon {
+    background-color: $c-jazz;
+  }
+
+  // indie
+  &-wrapper.indie {
+    border-bottom: 4px solid $c-indie;
+  }
+
+  &-wrapper.indie .festival__post-icon {
+    background-color: $c-indie;
+  }
+
+  // pop-rock
+  &-wrapper.poprock {
+    border-bottom: 4px solid $c-pop-rock;
+  }
+
+  &-wrapper.poprock .festival__post-icon {
+    background-color: $c-pop-rock;
+  }
+  // electronic
+  &-wrapper.electronic {
+    border-bottom: 4px solid $c-electronic;
+  }
+
+  &-wrapper.electronic .festival__post-icon {
+    background-color: $c-electronic;
+  }
+  // end music styles
+
+  &-img {
+    display: none;
+  }
+
+  &-icon {
+    align-items: center;
+    display: grid;
+    grid-area: icon;
+    height: 48px;
+    justify-content: center;
+    z-index: 2;
+  }
+
+  &-icon img {
+    width: 30px;
+  }
+
+  &-times {
+    align-self: end;
+    display: grid;
+    grid-area: times;
+    grid-template-rows: repeat(2, auto);
+    padding: 0 $spacer-m;
+  }
+
+  &-location {
+    float: left;
+    line-height: 22px;
+  }
+
+  &-spacer {
+    display: none;
+  }
+
+  &-date {
+    float: left;
+    line-height: 22px;
+  }
+
+  &-title {
+    grid-area: title;
+    padding: $spacer-m $spacer-m $spacer-xxs;
+  }
+
+  &-title a {
+    color: $primary;
+    text-decoration: none;
+  }
+
+  &-text {
+    display: none;
+  }
+
+  &-remember {
+    align-self: end;
+    grid-area: remember;
+    padding: 0 $spacer-m;
+    text-align: right;
+  }
+
+  &-remember::before {
+    content: $i-merken;
+  }
+
+  &-remember.selected::before {
+    content: $i-merken-filled;
+  }
+
+  &-remember .button__text {
+    display: none;
+  }
+}
+
+@media all and (min-width: $width-tablet) {
+  .festivals__wrapper.list .festival__post {
+    &-wrapper {
+      align-items: center;
+      border-bottom: 0;
+      grid-template-areas: 'icon title times remember';
+      grid-template-columns: 104px 3fr 2fr 104px;
+      grid-template-rows: 104px;
+      justify-content: space-between;
+      margin: $spacer-m 0;
+      padding-bottom: 0;
+    }
+
+    // music styles
+
+    // hiphop
+    &-wrapper.hiphop {
+      border-bottom: 0;
+      border-right: 4px solid $c-hiphop;
+    }
+
+    // jazz
+    &-wrapper.jazz {
+      border-bottom: 0;
+      border-right: 4px solid $c-jazz;
+    }
+
+    // indie
+    &-wrapper.indie {
+      border-bottom: 0;
+      border-right: 4px solid $c-indie;
+    }
+
+    // pop-rock
+    &-wrapper.poprock {
+      border-bottom: 0;
+      border-right: 4px solid $c-pop-rock;
+    }
+
+    // electronic
+    &-wrapper.electronic {
+      border-bottom: 0;
+      border-right: 4px solid $c-electronic;
+    }
+
+    // end music styles
+
+    &-icon {
+      height: 100%;
+      justify-items: center;
+      width: 100%;
+    }
+
+    &-icon img {
+      width: 64px;
+    }
+
+    &-remember {
+      align-content: center;
+      border-left: 1px solid $primary--4;
+      display: grid;
+      height: 100%;
+      padding: 0;
+      text-align: center;
+    }
+
+    &-remember .button__text {
+      display: block;
+    }
+
+    &-title.post__title {
+      padding: 0 $spacer-m;
+    }
+
+    &-times {
+      align-content: center;
+      border-left: 1px solid $primary--4;
+      height: 100%;
+    }
+  }
+}
+
+@media all and (min-width: $width-desktop) {
+  .festivals__wrapper.list .festival__post {
+    &-wrapper {
+      grid-template-areas: 'img img icon title times remember';
+      grid-template-columns: 0.8fr 0.8fr 104px 3fr 3fr 1.5fr;
+    }
+
+    &-img {
+      display: block;
+      grid-area: img;
+      height: 104px;
+      overflow: hidden;
+    }
+
+    &-img img {
+      width: 100%;
+    }
+
+    &-times {
+      align-items: center;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: 100%;
+      justify-content: stretch;
+      padding: 0;
+    }
+
+    &-location {
+      text-align: center;
+      width: 100%;
+    }
+
+    &-date {
+      align-content: center;
+      border-left: 1px solid $primary--4;
+      display: grid;
+      height: 100%;
+      text-align: center;
+      width: 100%;
+    }
+
+    &-remember {
+      grid-column-gap: $spacer-xs;
+      grid-template-columns: repeat(2, auto);
+      justify-content: center;
+    }
+  }
+}

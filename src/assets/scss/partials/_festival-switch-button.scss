@@ -1,0 +1,93 @@
+/**
+ Für Festival-Switch-Button
+ */
+
+.festival-switch {
+  &__wrapper {
+    display: grid;
+    grid-area: switch-button;
+    grid-row-gap: 1px;
+    grid-template-rows: repeat(2, 128px);
+    height: 257px;
+  }
+
+  &__wrapper.indie > .festival-switch__pre,
+  &__wrapper.indie > .festival-switch__next {
+    background-color: $c-indie--hell;
+  }
+
+  &__pre,
+  &__next {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    height: 128px;
+    justify-content: space-between;
+    text-decoration: none;
+  }
+
+  &__text {
+    color: $negative;
+  }
+
+  &__image {
+    height: 128px;
+    overflow: hidden;
+    width: 128px;
+  }
+
+  &__image img {
+    height: 100%;
+    margin-left: -70%;
+  }
+}
+
+.next__icon {
+  padding-right: $spacer-s;
+}
+
+.pre__icon {
+  padding-left: $spacer-s;
+}
+
+.next__icon img,
+.pre__icon img {
+  width: 32px;
+}
+
+@media all and (min-width: $width-tablet) {
+  .festival-switch {
+    &__image {
+      height: 128px;
+      overflow: hidden;
+      width: 312px;
+    }
+
+    &__image img {
+      height: 100%;
+      margin-left: 0;
+    }
+  }
+
+
+  .next__icon {
+    padding-right: $spacer-xxxl;
+  }
+
+  .pre__icon {
+    padding-left: $spacer-xxxl;
+  }
+}
+
+@media all and (min-width: $width-desktop) {
+  .festival-switch {
+    &__wrapper {
+      grid-column-gap: 1px;
+      grid-row-gap: 0;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: 128px;
+      height: 128px;
+    }
+  }
+
+}

@@ -1,0 +1,18 @@
+<h1 class="page__title">Alles für deinen Musikgeschmack</h1>
+<div class="lead__wrapper">
+    <p class="lead__text">Unsere FestivalLovers verdienen nur das Beste. Wir bringen euch alle Festials, Stars & Bands sowie Infos für einen genialen und unvergesslichen Musiksommer.</p>
+</div>
+{{>filter}}
+<!--Festival start-->
+<div id="festivaloverview" class="festivals__wrapper kacheln">
+    {{>sort-bar}}
+    <div class="festivals__posts">
+        {{#each api.festivals}}
+        {{>festival-post}}
+        {{/each}}
+    </div>
+    <div class="festivals__button">
+        <button id="festivals-more" class="button--secondary button__text">mehr anzeigen</button>
+    </div>
+</div>
+<!--Festival end-->

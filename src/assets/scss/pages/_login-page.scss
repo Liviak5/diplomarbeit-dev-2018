@@ -1,0 +1,72 @@
+.login {
+  &__box {
+    align-content: space-between;
+    background-color: $negative;
+    color: $primary;
+    display: grid;
+    grid-template-rows: auto 128px;
+    height: 425px;
+    padding: $spacer-l 0 0;
+    width: 310px;
+    z-index: 1;
+  }
+
+  &__form {
+    align-content: start;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto);
+    justify-items: center;
+    padding: 0 $spacer-m;
+    width: 100%;
+  }
+
+  &__input {
+    background-color: $primary--5;
+    border: 0;
+    color: $primary;
+    font-size: 13px;
+    height: 48px;
+    margin-bottom: $spacer-s;
+    padding: $spacer-xs;
+    width: 100%;
+  }
+
+  &__input::placeholder {
+    color: $primary--3;
+  }
+
+  &__button {
+    background-color: $primary;
+    border: 0;
+    cursor: pointer;
+    color: $negative;
+    height: 48px;
+    margin: $spacer-xxs 0;
+    padding: $spacer-xs;
+    text-align: center;
+    width: 60%;
+  }
+
+  &__info.addinfo {
+    color: $primary;
+  }
+
+  &__info a {
+    color: $primary;
+    font-weight: bold;
+  }
+
+  &__register {
+    align-items: center;
+    border-top: 1px solid $primary--3;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 128px;
+    height: 128px;
+    justify-items: center;
+    text-align: center;
+    width: 100%;
+  }
+}

@@ -1,0 +1,38 @@
+/**
+News-Post
+ */
+.news {
+  &-post {
+    background-color: $negative;
+    margin: 16px 0;
+    width: 100%;
+  }
+
+  &__post-img {
+    margin-bottom: -16px;
+    width: 100%;
+  }
+
+  &__post-content {
+    margin: 0 16px;
+    padding-top: 16px;
+  }
+
+  &__post-likes {
+    border-top: 1px solid $primary--4;
+    display: grid;
+    grid-column-gap: 8px;
+    grid-template-columns: repeat(2, auto);
+    justify-content: start;
+    margin: 0 16px;
+    padding: 8px 0;
+  }
+
+  &__post-like-button::after {
+    content: $i-like;
+  }
+
+  &__post-like-button.filled::after {
+    content: $i-like-filled;
+  }
+}

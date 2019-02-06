@@ -1,0 +1,41 @@
+<!--header start-->
+<div id="header" class="header__wrapper">
+    <div class="header__menu--left">
+        <div id="nav-button" class="header__nav">
+            <div class="header__nav-icon"></div>
+            <span class="header__text"></span>
+        </div>
+    </div>
+    <div class="header__logo">
+        <img id="logo-large" class="header__logo-img--large" src="{{root}}assets/media/logo_black.svg"
+             alt="Logo Festival-Lovers">
+        <img id="logo-small" class="header__logo-img--small" src="{{root}}assets/media/logo_black_sm.svg"
+             alt="Logo Festival-Lovers">
+    </div>
+    <div class="header__menu--right">
+        <div class="header__login" id="header-login">
+                <div class="header__login-icon"></div>
+                <span class="header__text">LOGIN</span>
+        </div>
+        <!--Login-Box start-->
+        <div id="login-box" class="header__login-box hide">
+            <form class="header__login-form" action="#">
+                <input class="header__login-input" type="text" placeholder="E-Mail-Adresse">
+                <input class="header__login-input" type="password" placeholder="Passwort">
+                <button class="header__login-button button__text">ANMELDEN</button>
+                <p class="header__login-info addinfo"><a href="#">Passwort</a> vergessen</p>
+            </form>
+            <div class="header__login-register">
+                <p class="header__login-info addinfo">Neu bei FestivalLovers?<br>
+                    Jetzt <a href="#">registrieren</a>!</p>
+
+            </div>
+        </div>
+        <!--Login-Box end-->
+        <div class="header__buy">
+            <a href="{{root}}content/ticket_overview.html"><span class="header__buy-icon"></span></a>
+            <a href="{{root}}content/ticket_overview.html" class="header__text">TICKETS KAUFEN</a>
+        </div>
+    </div>
+</div>
+<!--header end-->

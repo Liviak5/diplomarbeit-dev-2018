@@ -1,0 +1,57 @@
+/**
+Magazin
+ */
+.magazin {
+  &__wrapper {
+    display: grid;
+    grid-area: magazin;
+    grid-row-gap: $spacer-l;
+    grid-template-areas: 'magazine-title''magazine-posts''magazine-button';
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+    padding: 0 $spacer-s;
+  }
+
+  &__title {
+    grid-area: magazine-title;
+  }
+
+  &__posts {
+    display: inline-block;
+    grid-area: magazine-posts;
+  }
+
+  &__button {
+    grid-area: magazine-button;
+    text-align: center;
+  }
+}
+
+@media all and (min-width: 376px) {
+  .magazin {
+    &__wrapper {
+      padding: 0 $spacer-m;
+    }
+
+    &__posts {
+      display: grid;
+      grid-auto-rows: 20px;
+      grid-column-gap: $spacer-m;
+      grid-row-gap: $spacer-l;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media all and (min-width: 769px) {
+  .magazin {
+    &__wrapper {
+      padding: 0 $spacer-xxxl;
+    }
+
+    &__posts {
+      grid-column-gap: $spacer-s;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<section class="discover__wrapper">
+    <h2 class="discover__title page__title">Entdeckungen</h2>
+    <div class="discover__lead-wrapper">
+        <p class="lead__text">Sei offen für Neues und geniesse unerwartete Musikerlebnisse. Höre dir die Samples an und entdecke deine Leidenschaften.</p>
+    </div>
+    {{#each api.discovers}}
+    {{>audio}}
+    {{/each}}
+
+    <div class="discover__button">
+        <button id="discover-more" class="button--secondary button__text">mehr anzeigen</button>
+    </div>
+</section>

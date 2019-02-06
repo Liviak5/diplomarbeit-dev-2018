@@ -1,0 +1,60 @@
+/**
+News
+ */
+.news {
+  &__wrapper {
+    background-color: $primary--5;
+    display: grid;
+    grid-area: news;
+    grid-row-gap: $spacer-l;
+    grid-template-areas: 'title' 'posts' 'button';
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(3, auto);
+    justify-content: center;
+    padding: $spacer-xl $spacer-s;
+    width: 100vw;
+  }
+
+  &__title {
+    grid-area: title;
+  }
+
+  &__posts {
+    grid-area: posts;
+    width: 100%;
+  }
+
+  &__button {
+    grid-area: button;
+  }
+}
+
+@media all and (min-width: $width-tablet) {
+  .news {
+    &__wrapper {
+      justify-items: center;
+      padding: $spacer-xxl $spacer-m;
+    }
+
+    &__posts {
+      display: grid;
+      grid-auto-rows: 20px;
+      grid-column-gap: $spacer-m;
+      grid-row-gap: $spacer-xs;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media all and (min-width: $width-desktop) {
+  .news {
+    &__wrapper {
+      padding: $spacer-xxxl $spacer-xxxl;
+    }
+
+    &__posts {
+      grid-column-gap: $spacer-m;
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+}

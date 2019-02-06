@@ -1,0 +1,49 @@
+/**
+Ad Festival
+ */
+
+.ad__festival {
+  &-wrapper {
+    align-items: center;
+    display: grid;
+    grid-area: ad-festival;
+    grid-row-gap: $spacer-m;
+    grid-template-rows: repeat(6, auto);
+    height: 376px;
+    justify-items: center;
+  }
+
+  &-wrapper.indie {
+    background: $c-indie;
+  }
+
+  &-image {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 4;
+    text-align: center;
+  }
+
+  &-image img {
+    height: 200px;
+    opacity: 0.3;
+  }
+
+  &-wrapper > .button--secondary {
+    border-color: $negative;
+    color: $negative;
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+    text-align: center;
+  }
+
+  &-text {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    text-align: center;
+    z-index: 3;
+  }
+
+  &-text > .page__title {
+    color: $negative;
+  }
+}

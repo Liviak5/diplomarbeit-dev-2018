@@ -1,0 +1,53 @@
+.button {
+  &--primary,
+  &--primary-spitz,
+  &--secondary {
+    border: 1.5px solid $primary;
+    cursor: pointer;
+    display: inline-block;
+    height: 48px;
+    line-height: 48px;
+    margin: $spacer-xxs 0;
+    max-width: 343px;
+    padding: 0 $spacer-l;
+    width: 100%;
+  }
+
+  &--primary,
+  &--primary-spitz {
+    background-color: $primary;
+    color: $negative;
+  }
+
+  &--secondary {
+    background-color: transparent;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+@media all and (min-width: $width-tablet) {
+  .button {
+    &--primary,
+    &--primary-spitz,
+    &--secondary {
+      width: auto;
+    }
+
+    &--primary-spitz::after {
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid $primary;
+      content: '';
+      display: block;
+      height: 0;
+      margin-left: -10px;
+      position: relative;
+      top: -2px;
+      left: 50%;
+      width: 0;
+    }
+  }
+}

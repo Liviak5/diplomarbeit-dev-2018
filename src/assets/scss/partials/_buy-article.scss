@@ -1,0 +1,92 @@
+/**
+Für Buy-Article
+ */
+
+.article {
+  &__wrapper {
+    margin-top: $spacer-xl;
+  }
+
+  &__wrapper.indie > .article__banner {
+    background-color: $c-indie;
+  }
+
+  &__banner {
+    align-content: center;
+    background-color: $primary--3;
+    display: grid;
+    grid-row-gap: $spacer-s;
+    grid-template-areas: 'buy-banner-image' 'buy-banner--title' 'buy-banner-price';
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    height: 224px;
+    justify-items: center;
+  }
+
+  &__banner img {
+    grid-area: buy-banner-image;
+    width: 56px;
+  }
+
+  &__banner .page__title {
+    color: $negative;
+    grid-area: buy-banner--title;
+    padding: 0;
+  }
+
+  &__banner .sub__title {
+    color: $negative;
+    font-weight: 400;
+    grid-area: buy-banner-price;
+  }
+
+  &__availability {
+    align-content: center;
+    background-color: $negative;
+    display: grid;
+    height: 88px;
+    justify-items: center;
+  }
+
+  &__counter {
+    align-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    height: 48px;
+    justify-content: center;
+    margin: $spacer-m;
+  }
+}
+
+.counter {
+  &__button {
+    @include fontdef(32, 35);
+    background-color: transparent;
+    border: 2px solid $primary;
+    cursor: pointer;
+    height: 48px;
+    margin: 0 $spacer-l;
+    width: 48px;
+  }
+
+  &__article-units {
+    width: 50px;
+  }
+
+  &__display {
+    margin-right: $spacer-xxs;
+  }
+}
+
+@media all and (min-width: $width-tablet) {
+  .article {
+    &__wrapper {
+      margin-top: 0;
+    }
+
+    &__banner .page__title {
+      @include fontdef(32, 40, $negative);
+    }
+  }
+}

@@ -1,0 +1,87 @@
+/**
+Audioplayer
+ */
+
+.discover__track {
+  &-wrapper {
+    padding-top: $spacer-xl;
+  }
+
+  &-display {
+    background-repeat: repeat-x;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    width: 100%;
+  }
+
+  // für Indie
+  &-display.indie {
+    background-image: url('../media/icons/music_indie_col.svg');
+  }
+
+  &-display.indie.play {
+    background-image: url('../media/icons/music_indie_ani.gif');
+  }
+
+  // für jazz
+  &-display.jazz {
+    background-image: url('../media/icons/music_jazz_col.svg');
+  }
+
+  &-display.jazz.play {
+    background-image: url('../media/icons/music_jazz_ani.gif');
+  }
+
+  // für alternative
+  &-display.alternative {
+    background-image: url('../media/icons/music_alternative_col.svg');
+  }
+
+  &-display.alternative.play {
+    background-image: url('../media/icons/music_alternative_ani.gif');
+  }
+
+  // für hiphop
+  &-display.hiphop {
+    background-image: url('../media/icons/music_hiphop_col.svg');
+  }
+
+  &-display.hiphop.play {
+    background-image: url('../media/icons/music_hiphop_ani.gif');
+  }
+
+  // für country TODO: Bilder machen
+  &-display.country {
+    background-image: url('../media/icons/music_indie_col.svg');
+  }
+
+  &-display.country.play {
+    background-image: url('../media/icons/music_indie_ani.gif');
+  }
+
+  // für soul TODO: Bilder machen
+  &-display.soul {
+    background-image: url('../media/icons/music_indie_col.svg');
+  }
+
+  &-display.soul.play {
+    background-image: url('../media/icons/music_indie_ani.gif');
+  }
+
+  &-display.play > .discover__track-button::after {
+    content: $i-video-play;
+  }
+
+  &-button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 18px;
+  }
+
+  &-button::after {
+    content: $i-video-break;
+  }
+}

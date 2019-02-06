@@ -1,0 +1,91 @@
+/**
+Für Liveinfo
+ */
+.liveinfo {
+  &__wrapper {
+    background-color: $c-indie--hell;
+    color: $negative;
+    display: grid;
+    grid-area: liveinfo;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, 136px);
+  }
+
+  &__countdown,
+  &__avail-ticket,
+  &__visitor,
+  &__forecast {
+    align-content: center;
+    border-bottom: 1px solid $c-indie;
+    display: grid;
+    height: 100%;
+    justify-items: center;
+  }
+
+  &-countdown__title,
+  &-avail-ticket__title,
+  &-visitor__title,
+  &-forecast__title {
+    @include fontdef(24, 32, $negative);
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+  }
+
+  &-countdown__info,
+  &-avail-ticket__info,
+  &-visitor__info,
+  &-forecast__info {
+    @include fontdef(32, 40, $negative);
+    font-weight: bolder;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+  }
+}
+
+@media all and (min-width: $width-tablet) {
+  .liveinfo {
+    &__wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 264px);
+    }
+
+    &__avail-ticket,
+    &__forecast {
+      border-left: 1px solid $c-indie;
+    }
+
+    &-countdown__title,
+    &-avail-ticket__title,
+    &-visitor__title,
+    &-forecast__title {
+      @include fontdef(32, 40, $negative);
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+    }
+
+    &-countdown__info,
+    &-avail-ticket__info,
+    &-visitor__info,
+    &-forecast__info {
+      @include fontdef(56, 80, $negative);
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media all and (min-width: $width-desktop) {
+  .liveinfo {
+    &__wrapper {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 264px;
+    }
+
+    &__avail-ticket,
+    &__visitor,
+    &__forecast {
+      border-bottom: 0;
+      border-left: 1px solid $c-indie;
+    }
+  }
+}

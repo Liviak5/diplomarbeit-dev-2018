@@ -1,0 +1,40 @@
+/**
+Default-Layout
+ */
+
+.wrapper {
+  align-content: start;
+  display: grid;
+  grid-template-areas: 'header' 'main-content' 'footer';
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, auto);
+  height: 100vh;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.content__wrapper {
+  align-content: start;
+  display: grid;
+  grid-area: main-content;
+  grid-column-gap: $spacer-xs;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  width: 100%;
+}
+
+@media all and(min-width: $width-tablet) {
+  .wrapper {
+    grid-template-rows: 64px auto 64px;
+  }
+
+  .content__wrapper {
+    grid-column-gap: $spacer-m;
+  }
+}
+
+@media all and(min-width: $width-desktop) {
+  .content__wrapper {
+    grid-column-gap: $spacer-s;
+  }
+}

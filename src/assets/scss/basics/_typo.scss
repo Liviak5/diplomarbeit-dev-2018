@@ -1,0 +1,121 @@
+@import 'colour';
+@import 'fonts_icons';
+
+/* Typo */
+
+/**
+Vorgabe Fonts Adelle und Proxima Nova sind kostenpflichtig. Als Alternative darum der Vorschlag Google-Font "Arvo" und "Lato"
+Die Schriten sind sehr ähnlich und kostenlos verfügbar. Wenn gewünscht können die Schrift Adelle und Proxima Nova
+durch den Kunden oder durch uns gekauft und mit Font-Face eingebunden werden.
+ */
+
+html {
+  font-family: $flow;
+  font-size: 17px;
+  line-height: 28px;
+}
+
+/**
+@Parameter: fontsize in px, lineheigh in px, color
+Default color ist primary
+ */
+@mixin fontdef($fontsize, $lineheigh, $color: $primary) {
+  color: $color;
+  font-size: ($fontsize / 17) + rem;
+  line-height: ($lineheigh / 17) + rem;
+}
+
+/* Designer hat SEO beim Design evtl. nicht beachtet, darum macht es Sinn die Grössen, als Klassen zu definieren */
+
+.page__title,
+.post__title,
+.sub__title,
+.festival__title,
+.nav__title {
+  font-family: $title;
+  font-weight: 700;
+}
+
+/**
+entspricht Grösse h1
+ */
+.page__title,
+.nav__title {
+  @include fontdef(32, 40);
+  letter-spacing: 0.5px;
+}
+
+.page__title {
+  grid-area: title;
+  text-align: center;
+}
+
+/**
+entspricht Grösse h2
+ */
+.post__title {
+  @include fontdef(24, 32);
+}
+
+/**
+entspricht Grösse h3
+ */
+.sub__title {
+  @include fontdef(20, 32);
+}
+
+.festival__title {
+  @include fontdef(48, 55, $negative);
+  letter-spacing: 1px;
+}
+
+.lead__text {
+  @include fontdef(20, 32);
+  font-family: $title;
+  font-weight: 400;
+}
+
+.button__text,
+.tab__text,
+.header__text {
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  position: relative;
+  top: -3px;
+}
+
+.button__text {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.bc__text,
+.addinfo {
+  @include fontdef(13, 28);
+}
+
+@media all and (min-width: $width-tablet) {
+  .page__title,
+  .nav__title {
+    @include fontdef(48, 64);
+  }
+
+  .post__title {
+    @include fontdef(32, 40);
+  }
+
+  .festival__title {
+    @include fontdef(96, 100, #fff);
+  }
+}
+
+@media all and (min-width: $width-desktop) {
+  .page__title,
+  .nav__title {
+    @include fontdef(56, 80);
+  }
+
+  .festival__title {
+    @include fontdef(144, 144, #fff);
+  }
+}

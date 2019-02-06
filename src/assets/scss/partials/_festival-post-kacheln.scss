@@ -1,0 +1,178 @@
+/*
+Festival-Post-Kacheln
+ */
+
+.festivals__wrapper.kacheln .festival__post {
+  &-wrapper {
+    background-color: $negative;
+    display: grid;
+    grid-template-areas: 'img img img' 'img img img' 'times times times' 'title title remember';
+    grid-template-columns: 2fr auto 2fr;
+    grid-template-rows: 184px 48px auto auto;
+    justify-content: space-between;
+    margin: $spacer-m 0;
+    padding-bottom: $spacer-m;
+  }
+
+  // music styles
+
+  // hiphop
+  &-wrapper.hiphop {
+    border-bottom: 4px solid $c-hiphop;
+  }
+
+  &-wrapper.hiphop .festival__post-icon {
+    background-color: $c-hiphop;
+  }
+
+  // jazz
+  &-wrapper.jazz {
+    border-bottom: 4px solid $c-jazz;
+  }
+
+  &-wrapper.jazz .festival__post-icon {
+    background-color: $c-jazz;
+  }
+
+  // indie
+  &-wrapper.indie {
+    border-bottom: 4px solid $c-indie;
+  }
+
+  &-wrapper.indie .festival__post-icon {
+    background-color: $c-indie;
+  }
+
+  // pop-rock
+  &-wrapper.poprock {
+    border-bottom: 4px solid $c-pop-rock;
+  }
+
+  &-wrapper.poprock .festival__post-icon {
+    background-color: $c-pop-rock;
+  }
+  // electronic
+  &-wrapper.electronic {
+    border-bottom: 4px solid $c-electronic;
+  }
+
+  &-wrapper.electronic .festival__post-icon {
+    background-color: $c-electronic;
+  }
+  // end music styles
+
+  &-img {
+    grid-area: img;
+    height: 232px;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  &-img img {
+    position: relative;
+    width: 100%;
+  }
+
+  &-icon {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    height: 48px;
+    padding: $spacer-xs;
+    width: 48px;
+    z-index: 2;
+  }
+
+  &-times {
+    display: inline-block;
+    grid-area: times;
+    padding: $spacer-m $spacer-m $spacer-xxs;
+  }
+
+  &-location {
+    float: left;
+  }
+
+  &-spacer {
+    float: left;
+    margin: 0 $spacer-xxs;
+  }
+
+  &-date {
+    float: left;
+  }
+
+  &-title {
+    align-self: end;
+    grid-area: title;
+    padding: 0 $spacer-m;
+  }
+
+  &-title a {
+    color: $primary;
+    text-decoration: none;
+  }
+
+  //TODO: Firefox text-overflow
+  &-text {
+    display: none;
+    grid-area: text;
+    height: 110px;
+    overflow-y: hidden;
+    padding: $spacer-m;
+    text-overflow: ellipsis;
+    width: 100%;
+  }
+
+  &-text a {
+    color: $primary;
+    text-decoration: none;
+  }
+
+  &-remember {
+    align-self: end;
+    cursor: pointer;
+    grid-area: remember;
+    padding: 0 $spacer-m;
+    text-align: right;
+  }
+
+  &-remember::before {
+    content: $i-merken;
+  }
+
+  &-remember.selected::before {
+    content: $i-merken-filled;
+  }
+
+  &-remember > .button__text {
+    display: none;
+  }
+}
+
+@media all and (min-width: $width-tablet) {
+  .festivals__wrapper.kacheln .festival__post {
+    &-wrapper {
+      grid-template-areas: 'img img img' 'img img img' 'times times times' 'title title title' 'text text text' 'remember remember remember';
+      grid-template-columns: 2fr auto 2fr;
+      grid-template-rows: 184px 48px repeat(4, auto);
+      margin-bottom: 0;
+      margin-top: $spacer-m;
+    }
+
+    &-text {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+    }
+
+    &-remember {
+      margin-top: 88px;
+      text-align: left;
+    }
+
+    &-remember > .button__text {
+      display: inline-block;
+    }
+
+  }
+}

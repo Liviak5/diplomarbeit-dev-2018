@@ -1,0 +1,27 @@
+<!--lineup start-->
+<section class="line-up__wrapper">
+    <h2 class="line-up__title page__title">Line Up</h2>
+    <div class="line-up__lead">
+        <p class="lead__text">Wir freuen uns auch dieses Jahr wieder ein spannendes und einzigartiges Line Up
+            präsentieren zu dürfen. Auf der Hauptbühne wird definitiv viel Los sein.</p>
+    </div>
+    <ul id="day-button" class="line-up__day-choice button__text">
+        <li class="button--primary">
+            <p>Freitag</p>
+            <span><img id="line-up-dropdown-icon" src="{{root}}assets/media/icons/steuerung_dropdown_fff.svg" alt=""></span>
+            <ul id="day-list" class="line-up__day-list button__text">
+                <li class="line-up__day-item button--primary-spitz">Freitag</li>
+                <li class="line-up__day-item button--secondary">Samstag</li>
+                <li class="line-up__day-item button--secondary">Sonntag</li>
+            </ul>
+        </li>
+    </ul>
+    <div class="line-up__programm">
+        {{#with api.festivals.[2]}}
+        {{#each this.lineUp}}
+            {{>line-up-event}}
+        {{/each}}
+        {{/with}}
+    </div>
+</section>
+<!--line-up end-->
